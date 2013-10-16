@@ -1,5 +1,5 @@
 {
-    "name": "redecard/ecommerce",
+    "name": "danielcosta/redecard-ecommerce",
     "type": "library",
     "description": "PHP library that provides a simple way to communicate with RedeCard Ecommerce payment gateway",
     "keywords": ["redecard", "ecommerce", "payment", "gateway", "credit card", "visa", "mastercard"],

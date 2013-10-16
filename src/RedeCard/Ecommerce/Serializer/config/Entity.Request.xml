@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<serializer>
+    <class name="RedeCard\Ecommerce\Entity\Request" xml-root-name="Request">
+        <property name="version" type="integer" serialized-name="version" xml-attribute="true" />
+        <property name="Authentication" type="RedeCard\Ecommerce\Entity\Authentication" serialized-name="Authentication" />
+        <property name="Transaction" type="RedeCard\Ecommerce\Entity\Transaction" serialized-name="Transaction" />
+    </class>
+</serializer>

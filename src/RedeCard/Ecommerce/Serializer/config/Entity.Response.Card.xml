@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<serializer>
+    <class name="RedeCard\Ecommerce\Entity\Response\Card" xml-root-name="Response">
+        <property name="information" type="string" serialized-name="information" />
+        <property name="reason" type="string" serialized-name="reason" />
+        <property name="status" type="string" serialized-name="status" />
+        <property name="gatewayReference" type="string" serialized-name="gatewayReference" />
+        <property name="time" type="string" serialized-name="time" />
+        <property name="time" type="string" serialized-name="time" />
+    </class>
+</serializer>

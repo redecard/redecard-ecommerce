@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<serializer>
+    <class name="RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Cv2AvsResult" xml-root-name="Cv2Avs">
+        <property name="cv2AvsStatus" type="string" serialized-name="cv2avs_status" />
+        <property name="cv2AvsStatusReversal" type="string" serialized-name="cv2avs_status_reversal" />
+        <property name="policy" type="string" serialized-name="policy" />
+        <property name="addressResult" type="string" serialized-name="addressResult" />
+        <property name="addressResultNumeric" type="string" serialized-name="addressResultNumeric" />
+        <property name="cv2Result" type="string" serialized-name="cv2Result" />
+        <property name="cv2ResultNumeric" type="string" serialized-name="cv2ResultNumeric" />
+        <property name="postCodeResult" type="string" serialized-name="postCodeResult" />
+        <property name="postCodeResultNumeric" type="string" serialized-name="postCodeResultNumeric" />
+        <property name="cpfResult" type="string" serialized-name="cpfResult" />
+        <property name="cpfResultNumeric" type="string" serialized-name="cpfResultNumeric" />
+        <property name="addressPolicy" type="string" serialized-name="addressPolicy" />
+        <property name="cv2Policy" type="string" serialized-name="cv2Policy" />
+        <property name="postCodePolicy" type="string" serialized-name="postCodePolicy" />
+    </class>
+</serializer>

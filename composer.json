@@ -1,0 +1,24 @@
+{
+    "name": "redecard/ecommerce",
+    "type": "library",
+    "description": "PHP library that provides a simple way to communicate with RedeCard Ecommerce payment gateway",
+    "keywords": ["redecard", "ecommerce", "payment", "gateway", "credit card", "visa", "mastercard"],
+    "homepage": "http://www.redecard.com.br/pt-BR/produtosservicos/Paginas/ecommerce-manuais.aspx",
+    "authors": [
+        {
+            "name": "Daniel Costa",
+            "email": "danielcosta@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "jms/serializer": "0.*",
+        "nategood/httpful": "0.2.*"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+            "RedeCard": "src/"
+        }
+    }
+}

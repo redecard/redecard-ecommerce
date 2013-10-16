@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<serializer>
+    <class name="RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs" xml-root-name="Cv2Avs">
+        <property name="streetAddress1" type="string" serialized-name="street_address1" />
+        <property name="streetAddress2" type="string" serialized-name="street_address2" />
+        <property name="streetAddress3" type="string" serialized-name="street_address3" />
+        <property name="streetAddress4" type="string" serialized-name="street_address4" />
+        <property name="city" type="string" serialized-name="city" />
+        <property name="stateProvince" type="string" serialized-name="state_province" />
+        <property name="country" type="string" serialized-name="country" />
+        <property name="postCode" type="string" serialized-name="postcode" />
+        <property name="cpf" type="string" serialized-name="cpf" />
+        <property name="cv2" type="string" serialized-name="cv2" />
+        <property name="policy" type="string" serialized-name="policy" />
+        <property name="ExtendedPolicy" type="RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs\ExtendedPolicy" serialized-name="ExtendedPolicy" />
+    </class>
+</serializer>

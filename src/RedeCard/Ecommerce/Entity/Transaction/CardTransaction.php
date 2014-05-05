@@ -5,13 +5,13 @@ namespace RedeCard\Ecommerce\Entity\Transaction;
 use RedeCard\Ecommerce\Entity\AbstractEntity;
 use RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card;
 use RedeCard\Ecommerce\Entity\Enum\MethodEnum;
-use RedeCard\Ecommerce\Exception\InvalidMethodException;
+use RedeCard\Ecommerce\Exception\RedeCardEcommerceException;
 
 /**
  * Class CardTransaction
  *
  * @package RedeCard\Ecommerce\Entity\Transaction
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
 class CardTransaction extends AbstractEntity {
 
@@ -73,7 +73,6 @@ class CardTransaction extends AbstractEntity {
 
     /**
      * @param string $method
-     * @throws \RedeCard\Ecommerce\Exception\InvalidMethodException
      */
     public function setMethod($method)
     {
@@ -86,7 +85,7 @@ class CardTransaction extends AbstractEntity {
                 return $this;
                 break;
             default:
-                throw new InvalidMethodException('Invalid card transaction Method. Only "auth", "cancel", "fulfill" or "pre" allowed.');
+                throw new RedeCardEcommerceException('Invalid card transaction Method. Only "auth", "cancel", "fulfill" or "pre" allowed.');
         }
     }
 

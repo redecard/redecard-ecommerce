@@ -8,7 +8,7 @@ use RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs\ExtendedPo
  * Class Cv2Avs
  *
  * @package RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
 class Cv2Avs {
 

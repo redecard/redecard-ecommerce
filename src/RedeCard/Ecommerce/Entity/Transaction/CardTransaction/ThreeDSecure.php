@@ -6,7 +6,7 @@ namespace RedeCard\Ecommerce\Entity\Transaction\CardTransaction;
  * Class ThreeDSecure
  *
  * @package RedeCard\Ecommerce\Entity\Transaction\CardTransaction
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
 class ThreeDSecure {
 

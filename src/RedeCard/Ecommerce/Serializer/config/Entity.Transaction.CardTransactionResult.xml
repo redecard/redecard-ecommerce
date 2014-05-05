@@ -4,7 +4,7 @@
         <property name="issuer" type="string" serialized-name="issuer" />
         <property name="cardScheme" type="string" serialized-name="card_scheme" />
         <property name="country" type="string" serialized-name="country" />
-        <property name="authCode" type="string" serialized-name="auth_code" />
+        <property name="authCode" type="string" serialized-name="authcode" />
         <property name="Cv2Avs" type="RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Cv2AvsResult" serialized-name="Cv2Avs" />
     </class>
 </serializer>

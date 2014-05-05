@@ -7,7 +7,7 @@ use RedeCard\Ecommerce\Entity\Transaction\Details\AdditionalInfo\CustomerInfo;
 /**
  * Class AdditionalInfo
  * @package RedeCard\Ecommerce\Entity\Transaction\Details
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
 class AdditionalInfo {
 

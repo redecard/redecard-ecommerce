@@ -8,7 +8,7 @@ namespace RedeCard\Ecommerce\Entity\Enum;
  * Capture Method Enumerator
  *
  * @package RedeCard\Ecommerce\Entity\Enum
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
 class CaptureMethodEnum {
 

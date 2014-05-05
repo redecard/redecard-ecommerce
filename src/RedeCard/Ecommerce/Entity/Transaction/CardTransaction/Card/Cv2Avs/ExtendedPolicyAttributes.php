@@ -6,7 +6,7 @@ namespace RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs;
  * Class ExtendedPolicyAttributes
  *
  * @package RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
 class ExtendedPolicyAttributes {
 

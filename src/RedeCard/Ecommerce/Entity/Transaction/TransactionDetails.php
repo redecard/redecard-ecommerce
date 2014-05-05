@@ -4,14 +4,15 @@ namespace RedeCard\Ecommerce\Entity\Transaction;
 
 use RedeCard\Ecommerce\Entity\AbstractEntity;
 use RedeCard\Ecommerce\Entity\Transaction\TransactionDetails\Amount;
+use RedeCard\Ecommerce\Entity\Transaction\TransactionDetails\Installments;
 
 /**
  * Class Details
  * @package RedeCard\Ecommerce\Entity\Transaction
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
-class TransactionDetails extends AbstractEntity {
-
+class TransactionDetails extends AbstractEntity
+{
     /**
      * Número de referência único para cada transação
      *
@@ -27,6 +28,13 @@ class TransactionDetails extends AbstractEntity {
      * @var Amount
      */
     protected $Amount;
+
+    /**
+     * Elementos das Parcelas
+     *
+     * @var Installments
+     */
+    protected $Installments;
 
     /**
      * Especifica o ambiente da transação.
@@ -55,7 +63,23 @@ class TransactionDetails extends AbstractEntity {
      */
     public function getAmount()
     {
-        return $this->amount;
+        return $this->Amount;
+    }
+
+    /**
+     * @param Installments $Installments
+     */
+    public function setInstallments($Installments)
+    {
+        $this->Installments = $Installments;
+    }
+
+    /**
+     * @return Installments
+     */
+    public function getInstallments()
+    {
+        return $this->Installments;
     }
 
     /**
@@ -64,6 +88,7 @@ class TransactionDetails extends AbstractEntity {
     public function setCaptureMethod($captureMethod)
     {
         $this->captureMethod = $captureMethod;
+
         return $this;
     }
 
@@ -81,6 +106,7 @@ class TransactionDetails extends AbstractEntity {
     public function setMerchantReference($merchantReference)
     {
         $this->merchantReference = $merchantReference;
+
         return $this;
     }
 

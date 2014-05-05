@@ -6,7 +6,7 @@ namespace RedeCard\Ecommerce\Entity\Transaction\CardTransaction;
  * Class Cv2AvsResult
  *
  * @package RedeCard\Ecommerce\Entity\Transaction\CardTransaction
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
 class Cv2AvsResult {
 

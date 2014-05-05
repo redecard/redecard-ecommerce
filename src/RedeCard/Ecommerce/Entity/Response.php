@@ -10,7 +10,7 @@ use RedeCard\Ecommerce\Entity\Transaction\QueryTransactionResult;
  * Class Response
  *
  * @package RedeCard\Ecommerce\Entity
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
 class Response extends AbstractEntity {
 

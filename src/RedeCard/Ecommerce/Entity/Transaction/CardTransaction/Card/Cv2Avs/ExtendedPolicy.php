@@ -8,7 +8,7 @@ use RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs\ExtendedPo
  * Class ExtendedPolicy
  *
  * @package RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
 class ExtendedPolicy {
 

@@ -6,7 +6,7 @@ namespace RedeCard\Ecommerce\Entity\Enum;
  * Class ExtendedPolicyAttributeEnum
  *
  * @package RedeCard\Ecommerce\Entity\Enum
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
 class ExtendedPolicyAttributeEnum {
 

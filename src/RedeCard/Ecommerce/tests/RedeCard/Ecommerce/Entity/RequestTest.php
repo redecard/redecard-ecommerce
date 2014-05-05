@@ -12,7 +12,7 @@ use RedeCard\Ecommerce\Serializer\Builder;
  * *!*!*!*!*!*!* UNFINISHED FILE *!*!*!*!*!*!*!*
  *
  * @package RedeCard\Ecommerce
- * @author Daniel Costa <danielcosta@gmail.com>
+ * @author Daniel Costa <daniel.costa@mobly.com.br>
  */
 class RequestTest extends PHPUnit_Framework_TestCase {
     

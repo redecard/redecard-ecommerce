@@ -9,7 +9,7 @@ use RedeCard\Ecommerce\Entity\Enum\Currency\Iso4217Enum;
  * Class Card
  *
  * @package RedeCard\Ecommerce\Entity\Transaction\CardTransaction
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
 class Amount extends AbstractEntity {
 

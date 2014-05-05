@@ -8,7 +8,7 @@ namespace RedeCard\Ecommerce\Entity;
  * @package RedeCard\Ecommerce
  * @author Carlos Cima
  * @author Thiago Risso
- * @author Daniel Costa
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
 class AbstractEntity {
 

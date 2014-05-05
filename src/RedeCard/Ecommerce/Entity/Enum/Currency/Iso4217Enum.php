@@ -9,8 +9,8 @@ namespace RedeCard\Ecommerce\Entity\Enum\Currency;
  *
  * @package RedeCard\Ecommerce\Entity\Enum\Currency
  * @author Carlos Cima
- * @author Alexandre Xavier
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Alexandre Xavier <alexandre.rodrigues.xv@gmail.com>
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
 class Iso4217Enum {
 

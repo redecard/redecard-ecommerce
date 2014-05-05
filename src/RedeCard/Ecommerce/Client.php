@@ -9,7 +9,7 @@ use Httpful\Response;
  * Class Client
  *
  * @package RedeCard\Ecommerce
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
 class Client {
 

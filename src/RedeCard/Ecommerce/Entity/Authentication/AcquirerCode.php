@@ -11,7 +11,7 @@ use RedeCard\Ecommerce\Entity\AbstractEntity;
  * Esta funcionalidade é limitada com base no adquirente do estabelecimento comercial.
  *
  * @package RedeCard\Ecommerce\Entity\Authentication
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
 class AcquirerCode extends AbstractEntity {
 

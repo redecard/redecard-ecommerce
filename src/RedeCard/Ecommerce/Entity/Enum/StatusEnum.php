@@ -2,7 +2,7 @@
 
 namespace RedeCard\Ecommerce\Entity\Enum;
 
-use RedeCard\Ecommerce\Exception\InvalidStatusException;
+use RedeCard\Ecommerce\Exception\RedeCardEcommerceException;
 
 /**
  * Class StatusEnum
@@ -10,7 +10,7 @@ use RedeCard\Ecommerce\Exception\InvalidStatusException;
  * Transaction Status Enumerator
  *
  * @package RedeCard\Ecommerce\Entity\Enum
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
 class StatusEnum {
 
@@ -26,28 +26,28 @@ class StatusEnum {
      * @param $id
      *
      * @return mixed
-     * @throws \RedeCard\Ecommerce\Exception\InvalidStatusException
+     * @throws \Exception
      */
     public function getStatusByCode($id)
     {
         if (isset($this->codes[$id])) {
             return $this->codes[$id];
         }
-        throw new InvalidStatusException('Invalid status code');
+        throw new RedeCardEcommerceException('Invalid status code');
     }
 
     /**
      * @param $id
      *
      * @return mixed
-     * @throws \RedeCard\Ecommerce\Exception\InvalidStatusException
+     * @throws \Exception
      */
     public function getDescriptionByCode($id)
     {
         if (isset($this->descriptions[$id])) {
             return $this->descriptions[$id];
         }
-        throw new InvalidStatusException('Invalid status code');
+        throw new RedeCardEcommerceException('Invalid status code');
     }
 
 }

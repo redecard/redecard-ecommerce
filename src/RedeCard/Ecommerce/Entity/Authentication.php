@@ -3,14 +3,14 @@
 namespace RedeCard\Ecommerce\Entity;
 
 use RedeCard\Ecommerce\Entity\Authentication\AcquirerCode;
-use RedeCard\Ecommerce\Entity\Enum\AuthenticationTypeEnum;
-use RedeCard\Ecommerce\Exception\InvalidAuthenticationTypeException;
+use RedeCard\Ecommerce\Entity\Enum\AuthenticationType;
+use RedeCard\Ecommerce\Exception\RedeCardEcommerceException;
 
 /**
  * Class Authentication
  *
  * @package RedeCard\Ecommerce\Entity
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
 class Authentication extends AbstractEntity {
 
@@ -46,20 +46,19 @@ class Authentication extends AbstractEntity {
      * @param int $client Client ID or AcquirerCode
      * @param string $password Password
      * @param string $type Authentication Type
-     * @throws \RedeCard\Ecommerce\Exception\InvalidAuthenticationTypeException
      */
-    public function __construct($client, $password, $type = AuthenticationTypeEnum::ACQUIRER)
+    public function __construct($client, $password, $type = AuthenticationType::ACQUIRER)
     {
         switch ($type) {
-            case AuthenticationTypeEnum::ACQUIRER:
+            case AuthenticationType::ACQUIRER:
                 $acquirer = new AcquirerCode($client);
                 $this->setAcquirerCode($acquirer);
                 break;
-            case AuthenticationTypeEnum::CLIENT:
+            case AuthenticationType::CLIENT:
                 $this->setClient($client);
                 break;
             default:
-                throw new InvalidAuthenticationTypeException('Invalid authentication type');
+                throw new RedeCardEcommerceException('Invalid authentication type');
         }
         $this->setPassword($password);
         return $this;

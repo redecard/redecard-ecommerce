@@ -2,13 +2,13 @@
 
 namespace RedeCard\Ecommerce\Entity\Enum;
 
-use RedeCard\Ecommerce\Exception\InvalidCountryException;
+use RedeCard\Ecommerce\Exception\RedeCardEcommerceException;
 
 /**
  * Class CountryEnum
  *
  * @package RedeCard\Ecommerce\Entity\Enum
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Daniel Costa <danielcosta@gmail.com>
  * @link http://unstats.un.org/unsd/methods/m49/m49alpha.htm
  */
 class CountryEnum {
@@ -27,7 +27,7 @@ class CountryEnum {
      * @param $iso3Code
      *
      * @return string
-     * @throws \RedeCard\Ecommerce\Exception\InvalidCountryException
+     * @throws \RedeCard\Ecommerce\Exception\RedeCardEcommerceException
      */
     public static function getNumericalCodeByIso3Code($iso3Code)
     {
@@ -35,7 +35,7 @@ class CountryEnum {
             return self::$numericalCodes[$iso3Code];
         }
 
-        throw new InvalidCountryException('Invalid ISO 3 country code');
+        throw new RedeCardEcommerceException('Invalid ISO 3 country code');
     }
 
 }

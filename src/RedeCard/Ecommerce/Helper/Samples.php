@@ -21,7 +21,7 @@ use RedeCard\Ecommerce\Entity\Enum\ExtendedPolicyAttributeEnum;
  * Class Sample
  *
  * @package RedeCard\Ecommerce\Helper
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
 class Samples {
 
@@ -81,7 +81,7 @@ class Samples {
             ->setTransactionDetails($transactionDetails)
             ->setHistoricTransaction($historicTransaction);
 
-        $authentication = new Authentication('0123456', 'p4ss');
+        $authentication = new Authentication('c1ientID', 'p4ss');
 
         $request = new Request($authentication);
         $request->setTransaction($transaction);
@@ -95,7 +95,7 @@ class Samples {
 <Request version="2">
     <Authentication>
         <AcquirerCode>
-            <rdcd_pv>0123456</rdcd_pv>
+            <rdcd_pv><![CDATA[c1ientID]]></rdcd_pv>
         </AcquirerCode>
         <password><![CDATA[p4ss]]></password>
     </Authentication>
@@ -110,7 +110,7 @@ class Samples {
                     <street_address2><![CDATA[Myaddress]]></street_address2>
                     <street_address3><![CDATA[Mytown]]></street_address3>
                     <street_address4><![CDATA[Australia]]></street_address4>
-                    <postcode><![CDATA[2999]]></postcode>
+                    <post_code><![CDATA[2999]]></post_code>
                     <cpf><![CDATA[000000000-00]]></cpf>
                     <cv2><![CDATA[123]]></cv2>
                     <ExtendedPolicy>

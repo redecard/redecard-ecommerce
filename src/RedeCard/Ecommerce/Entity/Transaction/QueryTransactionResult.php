@@ -9,7 +9,7 @@ use RedeCard\Ecommerce\Entity\Transaction\CardTransaction\ThreeDSecure;
  * Class QueryTransactionResult
  *
  * @package RedeCard\Ecommerce\Entity\Transaction
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
 class QueryTransactionResult {
 

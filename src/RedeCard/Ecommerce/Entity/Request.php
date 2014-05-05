@@ -9,7 +9,7 @@ use RedeCard\Ecommerce\Entity\Transaction;
  * Class Request
  *
  * @package RedeCard\Ecommerce\Entity
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
 class Request extends AbstractEntity {
 

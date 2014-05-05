@@ -3,11 +3,11 @@
 namespace RedeCard\Ecommerce\Entity\Enum;
 
 /**
- * Class AuthenticationTypeEnum
+ * Class AuthenticationType
  * @package RedeCard\Ecommerce\Entity\Enum
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
-class AuthenticationTypeEnum {
+class AuthenticationType {
 
     /**
      * Este método usa uma instância de Authentication\AcquirerCode como parâmetro de autenticação

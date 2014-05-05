@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<serializer>
+    <class name="RedeCard\Ecommerce\Entity\Transaction" xml-root-name="Transaction">
+        <property name="CardTransaction" type="RedeCard\Ecommerce\Entity\Transaction\CardTransaction" serialized-name="CardTxn" />
+        <property name="TransactionDetails" type="RedeCard\Ecommerce\Entity\Transaction\TransactionDetails" serialized-name="TxnDetails" />
+        <property name="HistoricTransaction" type="RedeCard\Ecommerce\Entity\Transaction\HistoricTransaction" serialized-name="HistoricTxn" />
+    </class>
+</serializer>

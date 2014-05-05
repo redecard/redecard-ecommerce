@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<serializer>
+    <class name="RedeCard\Ecommerce\Entity\Transaction\QueryTransactionResult" xml-root-name="QueryTxn">
+        <property name="Card" type="RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card" serialized-name="Card" />
+        <property name="ThreeDSecure" type="RedeCard\Ecommerce\Entity\Transaction\CardTransaction\ThreeDSecure" serialized-name="ThreeDSecure" />
+        <property name="acquirer" type="string" serialized-name="acquirer" />
+        <property name="authCode" type="string" serialized-name="authcode" />
+        <property name="gatewayReference" type="string" serialized-name="gatewayReference" />
+        <property name="environment" type="string" serialized-name="environment" />
+        <property name="fulfillDate" type="string" serialized-name="fulfillDate" />
+        <property name="fulfillTimestamp" type="string" serialized-name="fulfillTimestamp" />
+        <property name="merchantReference" type="string" serialized-name="merchantReference" />
+        <property name="reason" type="string" serialized-name="reason" />
+        <property name="sent" type="string" serialized-name="sent" />
+        <property name="status" type="string" serialized-name="status" />
+        <property name="transactionDate" type="string" serialized-name="transactionDate" />
+        <property name="transactionTimestamp" type="string" serialized-name="transactionTimestamp" />
+    </class>
+</serializer>

@@ -8,7 +8,7 @@ use RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Cv2AvsResult;
  * Class CardTransactionResult
  *
  * @package RedeCard\Ecommerce\Entity\Transaction
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
 class CardTransactionResult {
 

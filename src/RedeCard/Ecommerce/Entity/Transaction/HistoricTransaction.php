@@ -13,7 +13,7 @@ use RedeCard\Ecommerce\Entity\AbstractEntity;
  * Transações Históricas exigem o fornecimento de informações similares sobre a transação.
  *
  * @package RedeCard\Ecommerce\Entity\Transaction
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
 class HistoricTransaction extends AbstractEntity {
 

@@ -5,7 +5,7 @@ namespace RedeCard\Ecommerce\Entity\Transaction\Details\AdditionalInfo;
 /**
  * Class CustomerInfo
  * @package RedeCard\Ecommerce\Entity\Transaction\Details\AdditionalInfo
- * @author Daniel Costa <daniel.costa@mobly.com.br>
+ * @author Daniel Costa <danielcosta@gmail.com>
  */
 class CustomerInfo {
 

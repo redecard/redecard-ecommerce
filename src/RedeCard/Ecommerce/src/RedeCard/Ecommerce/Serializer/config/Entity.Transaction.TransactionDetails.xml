@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<serializer>
-    <class name="RedeCard\Ecommerce\Entity\Transaction\TransactionDetails" xml-root-name="TxnDetails">
-        <property name="merchantReference" type="string" serialized-name="merchantreference" />
-        <property name="Amount" type="RedeCard\Ecommerce\Entity\Transaction\TransactionDetails\Amount" serialized-name="amount" />
-        <property name="Installments" type="RedeCard\Ecommerce\Entity\Transaction\TransactionDetails\Installments" serialized-name="Instalments" />
-        <property name="captureMethod" type="string" serialized-name="capturemethod" />
-    </class>
-</serializer>

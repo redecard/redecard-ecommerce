@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<serializer>
-    <class name="RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card" xml-root-name="Card">
-        <property name="pan" type="string" serialized-name="pan" />
-        <property name="expiryDate" type="string" serialized-name="expirydate" />
-        <property name="cardAccountType" type="string" serialized-name="card_account_type" />
-        <property name="cv2Avs" type="RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs" serialized-name="Cv2Avs" />
-    </class>
-</serializer>

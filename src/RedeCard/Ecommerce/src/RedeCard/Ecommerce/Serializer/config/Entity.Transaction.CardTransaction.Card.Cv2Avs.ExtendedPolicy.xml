@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<serializer>
-    <class name="RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs\ExtendedPolicy" xml-root-name="ExtendedPolicy">
-        <property name="cv2Policy" type="RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs\ExtendedPolicyAttributes" serialized-name="cv2_policy" />
-        <property name="postCodePolicy" type="RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs\ExtendedPolicyAttributes" serialized-name="postcode_policy" />
-        <property name="addressPolicy" type="RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs\ExtendedPolicyAttributes" serialized-name="address_policy" />
-        <property name="cpfPolicy" type="RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs\ExtendedPolicyAttributes" serialized-name="cpf_policy" />
-    </class>
-</serializer>

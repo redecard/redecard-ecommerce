@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<serializer>
-    <class name="RedeCard\Ecommerce\Entity\Transaction\TransactionDetails\Amount" xml-root-name="amount">
-        <property name="amount" type="float" serialized-name="amount">
-            <xml-list inline="true" entry-name="amount" />
-        </property>
-        <property name="currency" type="string" xml-attribute="true" serialized-name="currency" />
-    </class>
-</serializer>

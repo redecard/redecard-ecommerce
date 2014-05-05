@@ -93,48 +93,49 @@ class Samples {
     {
         return '<?xml version="1.0" encoding="UTF-8"?>
 <Request version="2">
-    <Authentication>
-        <AcquirerCode>
-            <rdcd_pv><![CDATA[c1ientID]]></rdcd_pv>
-        </AcquirerCode>
-        <password><![CDATA[p4ss]]></password>
-    </Authentication>
-    <Transaction>
-        <CardTxn>
-            <Card>
-                <pan><![CDATA[544433***********1]]></pan>
-                <expirydate><![CDATA[04/14]]></expirydate>
-                <card_account_type><![CDATA[credit]]></card_account_type>
-                <Cv2Avs>
-                    <street_address1><![CDATA[1 High Street]]></street_address1>
-                    <street_address2><![CDATA[Myaddress]]></street_address2>
-                    <street_address3><![CDATA[Mytown]]></street_address3>
-                    <street_address4><![CDATA[Australia]]></street_address4>
-                    <post_code><![CDATA[2999]]></post_code>
-                    <cpf><![CDATA[000000000-00]]></cpf>
-                    <cv2><![CDATA[123]]></cv2>
-                    <ExtendedPolicy>
-                        <cv2_policy notprovided="reject" notchecked="reject" matched="accept" notmatched="accept" partialmatch="accept"/>
-                        <postcode_policy notprovided="reject" notchecked="reject" matched="accept" notmatched="accept" partialmatch="accept"/>
-                        <address_policy notprovided="reject" notchecked="reject" matched="accept" notmatched="accept" partialmatch="accept"/>
-                        <cpf_policy notprovided="reject" notchecked="reject" matched="accept" notmatched="accept" partialmatch="accept"/>
-                    </ExtendedPolicy>
-                </Cv2Avs>
-            </Card>
-            <authcode><![CDATA[123123]]></authcode>
-            <method><![CDATA[pre]]></method>
-        </CardTxn>
-        <TxnDetails>
-            <merchantreference><![CDATA[mobly123456678]]></merchantreference>
-            <amount currency="BRL">999.99</amount>
-        </TxnDetails>
-        <HistoricTxn>
-            <reference><![CDATA[4100200039275407]]></reference>
-            <authcode><![CDATA[6414131]]></authcode>
-            <method><![CDATA[fulfill]]></method>
-        </HistoricTxn>
-    </Transaction>
-</Request>';
+  <Authentication>
+    <AcquirerCode>
+      <rdcd_pv>c1ientID</rdcd_pv>
+    </AcquirerCode>
+    <password><![CDATA[p4ss]]></password>
+  </Authentication>
+  <Transaction>
+    <CardTxn>
+      <Card>
+        <pan><![CDATA[544433***********1]]></pan>
+        <expirydate><![CDATA[04/14]]></expirydate>
+        <card_account_type><![CDATA[credit]]></card_account_type>
+        <Cv2Avs>
+          <street_address1><![CDATA[1 High Street]]></street_address1>
+          <street_address2><![CDATA[Myaddress]]></street_address2>
+          <street_address3><![CDATA[Mytown]]></street_address3>
+          <street_address4><![CDATA[Australia]]></street_address4>
+          <postcode><![CDATA[2999]]></postcode>
+          <cpf><![CDATA[000000000-00]]></cpf>
+          <cv2><![CDATA[123]]></cv2>
+          <ExtendedPolicy>
+            <cv2_policy notprovided="reject" notchecked="reject" matched="accept" notmatched="accept" partialmatch="accept"/>
+            <postcode_policy notprovided="reject" notchecked="reject" matched="accept" notmatched="accept" partialmatch="accept"/>
+            <address_policy notprovided="reject" notchecked="reject" matched="accept" notmatched="accept" partialmatch="accept"/>
+            <cpf_policy notprovided="reject" notchecked="reject" matched="accept" notmatched="accept" partialmatch="accept"/>
+          </ExtendedPolicy>
+        </Cv2Avs>
+      </Card>
+      <authcode><![CDATA[123123]]></authcode>
+      <method><![CDATA[pre]]></method>
+    </CardTxn>
+    <TxnDetails>
+      <merchantreference><![CDATA[mobly123456678]]></merchantreference>
+      <amount currency="BRL">999.99</amount>
+    </TxnDetails>
+    <HistoricTxn>
+      <reference><![CDATA[4100200039275407]]></reference>
+      <authcode><![CDATA[6414131]]></authcode>
+      <method><![CDATA[fulfill]]></method>
+    </HistoricTxn>
+  </Transaction>
+</Request>
+';
     }
 
     public static function getRespostaPadrao()

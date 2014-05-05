@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<serializer>
-    <class name="RedeCard\Ecommerce\Entity\Transaction\TransactionDetails\Installments" xml-root-name="Instalments">
-        <property name="type" type="string" serialized-name="type" />
-        <property name="number" type="int" serialized-name="number" />
-    </class>
-</serializer>

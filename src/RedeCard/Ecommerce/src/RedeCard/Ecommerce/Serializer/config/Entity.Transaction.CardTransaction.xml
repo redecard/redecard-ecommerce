@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<serializer>
-    <class name="RedeCard\Ecommerce\Entity\Transaction\CardTransaction" xml-root-name="CardTxn">
-        <property name="Card" type="RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card" serialized-name="Card" />
-        <property name="authCode" type="string" serialized-name="authcode" />
-        <property name="method" type="string" serialized-name="method" />
-    </class>
-</serializer>

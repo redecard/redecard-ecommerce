@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<serializer>
-    <class name="RedeCard\Ecommerce\Entity\Authentication" xml-root-name="Authentication">
-        <property name="AcquirerCode" type="RedeCard\Ecommerce\Entity\Authentication\AcquirerCode" serialized-name="AcquirerCode" />
-        <property name="client" type="string" serialized-name="client" />
-        <property name="password" type="string" serialized-name="password" />
-    </class>
-</serializer>

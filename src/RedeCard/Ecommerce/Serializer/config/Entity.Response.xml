@@ -7,6 +7,8 @@
         <property name="gatewayReference" type="string" serialized-name="gateway_reference" />
         <property name="merchantReference" type="string" serialized-name="merchantreference" />
         <property name="authHostReference" type="string" serialized-name="auth_host_reference" />
+        <property name="extendedStatus" type="string" serialized-name="extended_status" />
+        <property name="extendedResponseMessage" type="string" serialized-name="extended_response_message" />
         <property name="acquirer" type="string" serialized-name="acquirer" />
         <property name="time" type="string" serialized-name="time" />
         <property name="mode" type="string" serialized-name="mode" />

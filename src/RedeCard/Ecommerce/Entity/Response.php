@@ -12,7 +12,8 @@ use RedeCard\Ecommerce\Entity\Transaction\QueryTransactionResult;
  * @package RedeCard\Ecommerce\Entity
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class Response extends AbstractEntity {
+class Response extends AbstractEntity
+{
 
     /**
      * Código numérico de retorno que indica o resultado da transação
@@ -74,6 +75,18 @@ class Response extends AbstractEntity {
      * @var int
      */
     protected $authHostReference;
+
+    /**
+     * Contém o código de status obtido do host de autorização da Rede
+     * @var int
+     */
+    protected $extendedStatus;
+
+    /**
+     * Contém a descrição do código de status obtido do host de autorização da Rede
+     * @var string
+     */
+    protected $extendedResponseMessage;
 
     /**
      * @var CardTransactionResult
@@ -282,6 +295,26 @@ class Response extends AbstractEntity {
     public function getHistoricTransactionResult()
     {
         return $this->HistoricTransactionResult;
+    }
+
+    public function getExtendedStatus()
+    {
+        return $this->extendedStatus;
+    }
+
+    public function setExtendedStatus($extendedStatus)
+    {
+        $this->extendedStatus = $extendedStatus;
+    }
+
+    public function getExtendedResponseMessage()
+    {
+        return $this->extendedResponseMessage;
+    }
+
+    public function setExtendedResponseMessage($extendedResponseMessage)
+    {
+        $this->extendedResponseMessage = $extendedResponseMessage;
     }
 
 }

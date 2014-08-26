@@ -13,7 +13,7 @@
         <property name="time" type="string" serialized-name="time" />
         <property name="mode" type="string" serialized-name="mode" />
         <property name="CardTransactionResult" type="RedeCard\Ecommerce\Entity\Transaction\CardTransactionResult" serialized-name="CardTxn" />
-        <property name="QueryTransactionResult" type="RedeCard\Ecommerce\Entity\Transaction\QueryTransactionResult" serialized-name="QueryTxn" />
+        <property name="QueryTransactionResult" type="RedeCard\Ecommerce\Entity\Transaction\QueryTransactionResult" serialized-name="QueryTxnResult" />
         <property name="HistoricTransactionResult" type="RedeCard\Ecommerce\Entity\Transaction\QueryTransactionResult" serialized-name="HistoricTxn" />
     </class>
 </serializer>

@@ -5,5 +5,7 @@
         <property name="Amount" type="RedeCard\Ecommerce\Entity\Transaction\TransactionDetails\Amount" serialized-name="amount" />
         <property name="Installments" type="RedeCard\Ecommerce\Entity\Transaction\TransactionDetails\Installments" serialized-name="Instalments" />
         <property name="captureMethod" type="string" serialized-name="capturemethod" />
+        <property name="dba" type="string" serialized-name="dba" />
+        <property name="multiPv" type="string" serialized-name="multipv" />
     </class>
 </serializer>

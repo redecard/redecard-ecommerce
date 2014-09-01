@@ -11,8 +11,8 @@ use RedeCard\Ecommerce\Entity\Transaction\TransactionDetails\Installments;
  * @package RedeCard\Ecommerce\Entity\Transaction
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class TransactionDetails extends AbstractEntity
-{
+class TransactionDetails extends AbstractEntity {
+
     /**
      * Número de referência único para cada transação
      *
@@ -51,6 +51,19 @@ class TransactionDetails extends AbstractEntity
     protected $captureMethod;
 
     /**
+     * Identificador de descrição do estabelecimento comercial (Doing Business As)
+     * Especificado pelo estabelecimento e pode conter até 13 caracteres alfanuméricos
+     * @var string
+     */
+    protected $dba;
+
+    /**
+     * Especificado pelo estabelecimento comercial e pode conter até 9 caracteres numéricos
+     * @var int
+     */
+    protected $multiPv;
+
+    /**
      * @param Amount $amount
      */
     public function setAmount(Amount $Amount)
@@ -69,7 +82,7 @@ class TransactionDetails extends AbstractEntity
     /**
      * @param Installments $Installments
      */
-    public function setInstallments($Installments)
+    public function setInstallments(Installments $Installments)
     {
         $this->Installments = $Installments;
     }
@@ -116,6 +129,26 @@ class TransactionDetails extends AbstractEntity
     public function getMerchantReference()
     {
         return $this->merchantReference;
+    }
+
+    public function getDba()
+    {
+        return $this->dba;
+    }
+
+    public function setDba($dba)
+    {
+        $this->dba = $dba;
+    }
+
+    public function getMultiPv()
+    {
+        return $this->multiPv;
+    }
+
+    public function setMultiPv($multiPv)
+    {
+        $this->multiPv = $multiPv;
     }
 
 }

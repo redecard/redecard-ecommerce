@@ -7,6 +7,8 @@
         <property name="authCode" type="string" serialized-name="authcode" />
         <property name="gatewayReference" type="string" serialized-name="gateway_reference" />
         <property name="environment" type="string" serialized-name="environment" />
+        <property name="cancelDate" type="string" serialized-name="cancel_date" />
+        <property name="cancelTimestamp" type="string" serialized-name="cancel_timestamp" />        
         <property name="fulfillDate" type="string" serialized-name="fulfill_date" />
         <property name="fulfillTimestamp" type="string" serialized-name="fulfill_timestamp" />
         <property name="merchantReference" type="string" serialized-name="merchant_reference" />

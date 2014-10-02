@@ -5,15 +5,17 @@
         <property name="ThreeDSecure" type="RedeCard\Ecommerce\Entity\Transaction\CardTransaction\ThreeDSecure" serialized-name="ThreeDSecure" />
         <property name="acquirer" type="string" serialized-name="acquirer" />
         <property name="authCode" type="string" serialized-name="authcode" />
-        <property name="gatewayReference" type="string" serialized-name="gatewayReference" />
+        <property name="gatewayReference" type="string" serialized-name="gateway_reference" />
         <property name="environment" type="string" serialized-name="environment" />
-        <property name="fulfillDate" type="string" serialized-name="fulfillDate" />
-        <property name="fulfillTimestamp" type="string" serialized-name="fulfillTimestamp" />
-        <property name="merchantReference" type="string" serialized-name="merchantReference" />
+        <property name="cancelDate" type="string" serialized-name="cancel_date" />
+        <property name="cancelTimestamp" type="string" serialized-name="cancel_timestamp" />        
+        <property name="fulfillDate" type="string" serialized-name="fulfill_date" />
+        <property name="fulfillTimestamp" type="string" serialized-name="fulfill_timestamp" />
+        <property name="merchantReference" type="string" serialized-name="merchant_reference" />
         <property name="reason" type="string" serialized-name="reason" />
         <property name="sent" type="string" serialized-name="sent" />
         <property name="status" type="string" serialized-name="status" />
-        <property name="transactionDate" type="string" serialized-name="transactionDate" />
-        <property name="transactionTimestamp" type="string" serialized-name="transactionTimestamp" />
+        <property name="transactionDate" type="string" serialized-name="transaction_date" />
+        <property name="transactionTimestamp" type="string" serialized-name="transaction_timestamp" />
     </class>
 </serializer>

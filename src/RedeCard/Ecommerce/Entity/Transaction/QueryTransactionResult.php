@@ -57,6 +57,16 @@ class QueryTransactionResult {
     protected $environment;
 
     /**
+     * Data de estorno. Apenas presente se a transação for estornada
+     */
+    protected $cancelDate;
+
+    /**
+     * Timestamp UNIX associado ao estorno.
+     */
+    protected $cancelTimestamp;
+
+    /**
      * Data de finalização
      *
      * @var string
@@ -202,6 +212,26 @@ class QueryTransactionResult {
     public function getEnvironment()
     {
         return $this->environment;
+    }
+
+    public function getCancelDate()
+    {
+        return $this->cancelDate;
+    }
+
+    public function setCancelDate($cancelDate)
+    {
+        $this->cancelDate = $cancelDate;
+    }
+
+    public function getCancelTimestamp()
+    {
+        return $this->cancelTimestamp;
+    }
+
+    public function setCancelTimestamp($cancelTimestamp)
+    {
+        $this->cancelTimestamp = $cancelTimestamp;
     }
 
     /**

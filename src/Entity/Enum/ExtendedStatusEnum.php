@@ -2,7 +2,7 @@
 
 namespace RedeCard\Ecommerce\Entity\Enum;
 
-use RedeCard\Ecommerce\Exception\RedeCardEcommerceException;
+use RedeCard\Ecommerce\Exception\Exception;
 
 /**
  * Class ExtendedStatusEnum
@@ -43,7 +43,7 @@ class ExtendedStatusEnum
         if (isset($this->descriptions[$id])) {
             return $this->descriptions[$id];
         }
-        throw new RedeCardEcommerceException('Invalid status code');
+        throw new Exception('Invalid status code');
     }
 
 }

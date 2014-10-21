@@ -4,7 +4,7 @@ namespace RedeCard\Ecommerce\Entity;
 
 use RedeCard\Ecommerce\Entity\Authentication\AcquirerCode;
 use RedeCard\Ecommerce\Entity\Enum\AuthenticationType;
-use RedeCard\Ecommerce\Exception\RedeCardEcommerceException;
+use RedeCard\Ecommerce\Exception\Exception;
 
 /**
  * Class Authentication
@@ -12,8 +12,8 @@ use RedeCard\Ecommerce\Exception\RedeCardEcommerceException;
  * @package RedeCard\Ecommerce\Entity
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class Authentication extends AbstractEntity {
-
+class Authentication extends AbstractEntity
+{
     /**
      * Permite a um estabelecimento usar o número de identificação atribuído pelo adquirente.
      *
@@ -58,7 +58,7 @@ class Authentication extends AbstractEntity {
                 $this->setClient($client);
                 break;
             default:
-                throw new RedeCardEcommerceException('Invalid authentication type');
+                throw new Exception('Invalid authentication type');
         }
         $this->setPassword($password);
         return $this;
@@ -114,5 +114,4 @@ class Authentication extends AbstractEntity {
     {
         return $this->client;
     }
-
 }

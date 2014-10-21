@@ -5,7 +5,7 @@ namespace RedeCard\Ecommerce\Entity\Transaction\CardTransaction;
 use RedeCard\Ecommerce\Entity\AbstractEntity;
 use RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs;
 use RedeCard\Ecommerce\Entity\Enum\CardAccountTypeEnum;
-use RedeCard\Ecommerce\Exception\RedeCardEcommerceException;
+use RedeCard\Ecommerce\Exception\Exception;
 
 /**
  * Class Card
@@ -65,7 +65,7 @@ class Card extends AbstractEntity {
                 return $this;
                 break;
             default:
-                throw new RedeCardEcommerceException('Invalid Card Account Type. Only "credit" or "debit" allowed.');
+                throw new Exception('Invalid Card Account Type. Only "credit" or "debit" allowed.');
                 break;
         }
     }

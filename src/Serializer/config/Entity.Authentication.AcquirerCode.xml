@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <serializer>
     <class name="RedeCard\Ecommerce\Entity\Authentication\AcquirerCode" xml-root-name="AcquirerCode">
-        <property name="rdcd_pv" type="integer" serialized-name="rdcd_pv" />
+        <property name="rdcdPv" type="integer" serialized-name="rdcd_pv" />
     </class>
 </serializer>

@@ -2,13 +2,15 @@
 
 namespace RedeCard\Ecommerce\Exception;
 
-use \Exception;
+use \Exception as PHPException;
 
 /**
- * Class RedeCardEcommerceException
+ * Class Exception
+ *
  * @package RedeCard\Ecommerce\Exception
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class RedeCardEcommerceException extends Exception {
+class Exception extends PHPException
+{
 
 }

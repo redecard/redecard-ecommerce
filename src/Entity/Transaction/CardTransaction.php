@@ -5,7 +5,7 @@ namespace RedeCard\Ecommerce\Entity\Transaction;
 use RedeCard\Ecommerce\Entity\AbstractEntity;
 use RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card;
 use RedeCard\Ecommerce\Entity\Enum\MethodEnum;
-use RedeCard\Ecommerce\Exception\RedeCardEcommerceException;
+use RedeCard\Ecommerce\Exception\Exception;
 
 /**
  * Class CardTransaction
@@ -85,7 +85,7 @@ class CardTransaction extends AbstractEntity {
                 return $this;
                 break;
             default:
-                throw new RedeCardEcommerceException('Invalid card transaction Method. Only "auth", "cancel", "fulfill" or "pre" allowed.');
+                throw new Exception('Invalid card transaction Method. Only "auth", "cancel", "fulfill" or "pre" allowed.');
         }
     }
 

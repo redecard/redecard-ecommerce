@@ -35,6 +35,6 @@ class AuthenticationTest extends \PHPUnit_Framework_TestCase
      */
     public function testConstructorWithInvalidTypeThrowsException()
     {
-        new Authentication(123456789, 'p4ssw0rd', 'a');
+        new Authentication(123456789, 'p4ssw0rd', 0);
     }
 }

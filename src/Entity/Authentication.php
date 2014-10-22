@@ -45,7 +45,9 @@ class Authentication extends AbstractEntity
     /**
      * @param int $client Client ID or AcquirerCode
      * @param string $password Password
-     * @param string $type Authentication Type
+     * @param int $type Authentication Type
+     * @return Authentication
+     * @throws \Exception
      */
     public function __construct($client, $password, $type = AuthenticationType::ACQUIRER)
     {
@@ -66,6 +68,7 @@ class Authentication extends AbstractEntity
 
     /**
      * @param AcquirerCode $AcquirerCode
+     * @return Authentication
      */
     public function setAcquirerCode(AcquirerCode $AcquirerCode)
     {
@@ -83,6 +86,7 @@ class Authentication extends AbstractEntity
 
     /**
      * @param string $password
+     * @return Authentication
      */
     public function setPassword($password)
     {
@@ -100,6 +104,7 @@ class Authentication extends AbstractEntity
 
     /**
      * @param string $client
+     * @return Authentication
      */
     public function setClient($client)
     {

@@ -114,10 +114,14 @@ class Samples
           <cpf><![CDATA[000000000-00]]></cpf>
           <cv2><![CDATA[123]]></cv2>
           <ExtendedPolicy>
-            <cv2_policy notprovided="reject" notchecked="reject" matched="accept" notmatched="accept" partialmatch="accept"/>
-            <postcode_policy notprovided="reject" notchecked="reject" matched="accept" notmatched="accept" partialmatch="accept"/>
-            <address_policy notprovided="reject" notchecked="reject" matched="accept" notmatched="accept" partialmatch="accept"/>
-            <cpf_policy notprovided="reject" notchecked="reject" matched="accept" notmatched="accept" partialmatch="accept"/>
+            <cv2_policy notprovided="reject" notchecked="reject" matched="accept" notmatched="accept"
+                partialmatch="accept"/>
+            <postcode_policy notprovided="reject" notchecked="reject" matched="accept" notmatched="accept"
+                partialmatch="accept"/>
+            <address_policy notprovided="reject" notchecked="reject" matched="accept" notmatched="accept"
+                partialmatch="accept"/>
+            <cpf_policy notprovided="reject" notchecked="reject" matched="accept" notmatched="accept"
+                partialmatch="accept"/>
           </ExtendedPolicy>
         </Cv2Avs>
       </Card>
@@ -244,12 +248,15 @@ class Samples
         <authcode>4382</authcode>
         <card_scheme>Mastercard</card_scheme>
         <Cv2Avs>
-            <address_policy notprovided='reject' notchecked='accept' matched='accept' notmatched='reject' partialmatch='accept'/>
+            <address_policy notprovided='reject' notchecked='accept' matched='accept' notmatched='reject'
+                partialmatch='accept'/>
             <address_result numeric='2'>matched</address_result>
-            <cv2_policy notprovided='reject' notchecked='accept' matched='accept' notmatched='reject' partialmatch='reject'/>
+            <cv2_policy notprovided='reject' notchecked='accept' matched='accept' notmatched='reject'
+                partialmatch='reject'/>
             <cv2_result numeric='1'>not checked</cv2_result>
             <cv2avs_status>ACCEPTED</cv2avs_status>
-            <postcode_policy notprovided='reject' notchecked='accept' matched='accept' notmatched='reject' partialmatch='accept'/>
+            <postcode_policy notprovided='reject' notchecked='accept' matched='accept' notmatched='reject'
+                partialmatch='accept'/>
             <postcode_result numeric='2'>matched</postcode_result>
         </Cv2Avs>
     </CardTxn>
@@ -292,12 +299,15 @@ class Samples
         <card_scheme>Mastercard</card_scheme>
         <country>Australia</country>
         <Cv2Avs>
-            <address_policy notprovided='reject' notchecked='accept' matched='accept' notmatched='reject' partialmatch='accept' />
+            <address_policy notprovided='reject' notchecked='accept' matched='accept' notmatched='reject'
+                partialmatch='accept' />
             <address_result numeric='1'>notchecked</address_result>
-            <cv2_policy notprovided='reject' notchecked='accept' matched='accept' notmatched='reject' partialmatch='reject' />
+            <cv2_policy notprovided='reject' notchecked='accept' matched='accept' notmatched='reject'
+                partialmatch='reject' />
             <cv2_result numeric='2'>matched</cv2_result>
             <cv2avs_status reversal='1'>REJECTED</cv2avs_status>
-            <postcode_policy notprovided='reject' notchecked='accept' matched='accept' notmatched='reject' partialmatch='accept' />
+            <postcode_policy notprovided='reject' notchecked='accept' matched='accept' notmatched='reject'
+                partialmatch='accept' />
             <postcode_result numeric='4'>notmatched</postcode_result>
         </Cv2Avs>
     </CardTxn>

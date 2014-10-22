@@ -20,9 +20,9 @@ class ExtendedStatusEnum
         51 => 'Produto ou serviço não habilitado para o estabelecimento. Entre em contato com a Rede',
         53 => 'Transação não permitida para o emissor. Entre em contato com a Rede',
         56 => 'Erro nos dados informados. Tente novamente. '
-            //. 'Ao receber este erro na transação de confirmação da pré (fulfill), '
-            //. 'importante reenviar a transação diariamente durante 3 dias e caso persista o erro entrar em contato com
-            // nosso suporte técnico'
+            // Ao receber este erro na transação de confirmação da pré (fulfill),
+            // importante reenviar a transação diariamente durante 3 dias e caso persista o erro entrar em contato com
+            // nosso suporte técnico
         ,
         57 => 'Estabelecimento inválido',
         58 => 'Transação não autorizada. Contate o emissor',

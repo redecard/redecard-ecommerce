@@ -1,5 +1,8 @@
-# RedeCard Ecommerce PHP Library [![Build Status](https://travis-ci.org/danielcosta/redecard-ecommerce.png?branch=master)](https://travis-ci.org/danielcosta/redecard-ecommerce) #
+# RedeCard Ecommerce PHP Library #
 
+[![Build Status](https://travis-ci.org/danielcosta/redecard-ecommerce.png?branch=master)](https://travis-ci.org/danielcosta/redecard-ecommerce)
+[![Coverage Status](https://coveralls.io/repos/danielcosta/redecard-ecommerce/badge.png)](https://coveralls.io/r/danielcosta/redecard-ecommerce)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/649aeff2-6329-4b59-aef6-89f58d2e565d/mini.png)](https://insight.sensiolabs.com/projects/649aeff2-6329-4b59-aef6-89f58d2e565d)
 
 ## Overview ##
 

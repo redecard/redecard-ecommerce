@@ -8,8 +8,8 @@ namespace RedeCard\Ecommerce\Entity\Transaction\CardTransaction;
  * @package RedeCard\Ecommerce\Entity\Transaction\CardTransaction
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class Cv2AvsResult {
-
+class Cv2AvsResult
+{
     /**
      * O resultado geral da transação.
      *
@@ -88,28 +88,32 @@ class Cv2AvsResult {
     protected $cpfResultNumeric;
 
     /**
-     * A política em relação à qual a transação foi verificada. Possuem o mesmo formato que as Solicitações - consulte a seção 2.3.1
+     * A política em relação à qual a transação foi verificada. Possuem o mesmo formato que as Solicitações
+     * consulte a seção 2.3.1
      *
      * @var string
      */
     protected $addressPolicy;
 
     /**
-     * A política em relação à qual a transação foi verificada. Possuem o mesmo formato que as Solicitações - consulte a seção 2.3.1
+     * A política em relação à qual a transação foi verificada. Possuem o mesmo formato que as Solicitações
+     * consulte a seção 2.3.1
      *
      * @var string
      */
     protected $cv2Policy;
 
     /**
-     * A política em relação à qual a transação foi verificada. Possuem o mesmo formato que as Solicitações - consulte a seção 2.3.1
+     * A política em relação à qual a transação foi verificada. Possuem o mesmo formato que as Solicitações
+     * consulte a seção 2.3.1
      *
      * @var string
      */
     protected $postCodePolicy;
 
     /**
-     * @param string $address_policy
+     * @param string $addressPolicy
+     * @return $this
      */
     public function setAddressPolicy($addressPolicy)
     {
@@ -126,7 +130,8 @@ class Cv2AvsResult {
     }
 
     /**
-     * @param string $address_result
+     * @param string $addressResult
+     * @return $this
      */
     public function setAddressResult($addressResult)
     {
@@ -143,7 +148,8 @@ class Cv2AvsResult {
     }
 
     /**
-     * @param string $cpf_result
+     * @param string $cpfResult
+     * @return $this
      */
     public function setCpfResult($cpfResult)
     {
@@ -160,7 +166,8 @@ class Cv2AvsResult {
     }
 
     /**
-     * @param string $cv2_policy
+     * @param string $cv2Policy
+     * @return $this
      */
     public function setCv2Policy($cv2Policy)
     {
@@ -177,7 +184,8 @@ class Cv2AvsResult {
     }
 
     /**
-     * @param string $cv2_result
+     * @param string $cv2Result
+     * @return $this
      */
     public function setCv2Result($cv2Result)
     {
@@ -194,7 +202,8 @@ class Cv2AvsResult {
     }
 
     /**
-     * @param string $cv2avs_status
+     * @param string $cv2AvsStatus
+     * @return $this
      */
     public function setCv2AvsStatus($cv2AvsStatus)
     {
@@ -212,6 +221,7 @@ class Cv2AvsResult {
 
     /**
      * @param int $policy
+     * @return $this
      */
     public function setPolicy($policy)
     {
@@ -228,7 +238,8 @@ class Cv2AvsResult {
     }
 
     /**
-     * @param string $postcode_policy
+     * @param string $postCodePolicy
+     * @return $this
      */
     public function setPostCodePolicy($postCodePolicy)
     {
@@ -245,7 +256,8 @@ class Cv2AvsResult {
     }
 
     /**
-     * @param string $postcode_result
+     * @param string $postCodeResult
+     * @return $this
      */
     public function setPostCodeResult($postCodeResult)
     {
@@ -262,7 +274,8 @@ class Cv2AvsResult {
     }
 
     /**
-     * @param int $cv2avs_status_reversal
+     * @param int $cv2AvsStatusReversal
+     * @return $this
      */
     public function setCv2AvsStatusReversal($cv2AvsStatusReversal)
     {
@@ -279,7 +292,8 @@ class Cv2AvsResult {
     }
 
     /**
-     * @param int $address_result_numeric
+     * @param int $addressResultNumeric
+     * @return $this
      */
     public function setAddressResultNumeric($addressResultNumeric)
     {
@@ -296,7 +310,8 @@ class Cv2AvsResult {
     }
 
     /**
-     * @param int $cpf_result_numeric
+     * @param int $cpfResultNumeric
+     * @return $this
      */
     public function setCpfResultNumeric($cpfResultNumeric)
     {
@@ -313,7 +328,8 @@ class Cv2AvsResult {
     }
 
     /**
-     * @param int $cv2_result_numeric
+     * @param int $cv2ResultNumeric
+     * @return $this
      */
     public function setCv2ResultNumeric($cv2ResultNumeric)
     {
@@ -330,7 +346,8 @@ class Cv2AvsResult {
     }
 
     /**
-     * @param int $postcode_result_numeric
+     * @param int $postCodeResultNumeric
+     * @return $this
      */
     public function setPostCodeResultNumeric($postCodeResultNumeric)
     {
@@ -345,5 +362,4 @@ class Cv2AvsResult {
     {
         return $this->postCodeResultNumeric;
     }
-
 }

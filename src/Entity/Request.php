@@ -11,8 +11,8 @@ use RedeCard\Ecommerce\Entity\Transaction;
  * @package RedeCard\Ecommerce\Entity
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class Request extends AbstractEntity {
-
+class Request extends AbstractEntity
+{
     /**
      * @var int
      */
@@ -30,6 +30,7 @@ class Request extends AbstractEntity {
 
     /**
      * @param Authentication $authentication
+     * @return Request
      */
     public function __construct(Authentication $authentication)
     {
@@ -39,6 +40,7 @@ class Request extends AbstractEntity {
 
     /**
      * @param Authentication $Authentication
+     * @return $this
      */
     public function setAuthentication(Authentication $Authentication)
     {
@@ -56,6 +58,7 @@ class Request extends AbstractEntity {
 
     /**
      * @param Transaction $Transaction
+     * @return $this
      */
     public function setTransaction(Transaction $Transaction)
     {
@@ -73,6 +76,7 @@ class Request extends AbstractEntity {
 
     /**
      * @param int $version
+     * @return $this
      */
     public function setVersion($version)
     {
@@ -87,5 +91,4 @@ class Request extends AbstractEntity {
     {
         return $this->version;
     }
-
 }

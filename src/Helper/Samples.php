@@ -23,9 +23,9 @@ use RedeCard\Ecommerce\Entity\Enum\ExtendedPolicyAttributeEnum;
  * @package RedeCard\Ecommerce\Helper
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class Samples {
-
-    /* Auxiliary methods */
+class Samples
+{
+    /* Auxiliary methods for unit tests */
 
     public static function getSampleRequest()
     {
@@ -358,5 +358,4 @@ cannot be located</information>
     <time>1260274296</time>
 </Response>";
     }
-    
 }

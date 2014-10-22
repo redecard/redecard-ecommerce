@@ -8,9 +8,8 @@ namespace RedeCard\Ecommerce\Entity\Enum;
  * @package RedeCard\Ecommerce\Entity\Enum
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class ExtendedPolicyAttributeEnum {
-
+class ExtendedPolicyAttributeEnum
+{
     const ACCEPT = 'accept';
     const REJECT = 'reject';
-
 }

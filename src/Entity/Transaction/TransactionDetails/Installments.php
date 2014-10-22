@@ -45,10 +45,12 @@ class Installments extends AbstractEntity
 
     /**
      * @param int $number
+     * @return $this
      */
     public function setNumber($number)
     {
         $this->number = $number;
+        return $this;
     }
 
     /**
@@ -61,10 +63,12 @@ class Installments extends AbstractEntity
 
     /**
      * @param string $type
+     * @return $this
      */
     public function setType($type)
     {
         $this->type = $type;
+        return $this;
     }
 
     /**

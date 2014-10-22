@@ -2,7 +2,6 @@
 
 namespace RedeCard\Ecommerce\Entity;
 
-use RedeCard\Ecommerce\Entity\AbstractEntity;
 use RedeCard\Ecommerce\Entity\Transaction\CardTransactionResult;
 use RedeCard\Ecommerce\Entity\Transaction\QueryTransactionResult;
 
@@ -111,7 +110,8 @@ class Response extends AbstractEntity
     protected $acquirer;
 
     /**
-     * @param int $auth_host_reference
+     * @param int $authHostReference
+     * @return $this
      */
     public function setAuthHostReference($authHostReference)
     {
@@ -128,7 +128,8 @@ class Response extends AbstractEntity
     }
 
     /**
-     * @param string $gateway_reference
+     * @param string $gatewayReference
+     * @return $this
      */
     public function setGatewayReference($gatewayReference)
     {
@@ -146,6 +147,7 @@ class Response extends AbstractEntity
 
     /**
      * @param string $information
+     * @return $this
      */
     public function setInformation($information)
     {
@@ -162,7 +164,8 @@ class Response extends AbstractEntity
     }
 
     /**
-     * @param int $merchant_reference
+     * @param int $merchantReference
+     * @return $this
      */
     public function setMerchantReference($merchantReference)
     {
@@ -180,6 +183,7 @@ class Response extends AbstractEntity
 
     /**
      * @param string $mode
+     * @return $this
      */
     public function setMode($mode)
     {
@@ -197,6 +201,7 @@ class Response extends AbstractEntity
 
     /**
      * @param string $reason
+     * @return $this
      */
     public function setReason($reason)
     {
@@ -214,6 +219,7 @@ class Response extends AbstractEntity
 
     /**
      * @param int $status
+     * @return $this
      */
     public function setStatus($status)
     {
@@ -231,6 +237,7 @@ class Response extends AbstractEntity
 
     /**
      * @param int $time
+     * @return $this
      */
     public function setTime($time)
     {
@@ -247,7 +254,8 @@ class Response extends AbstractEntity
     }
 
     /**
-     * @param CardTransactionResult $CardTransaction
+     * @param CardTransactionResult $CardTransactionResult
+     * @return $this
      */
     public function setCardTransactionResult(CardTransactionResult $CardTransactionResult)
     {
@@ -265,6 +273,7 @@ class Response extends AbstractEntity
 
     /**
      * @param QueryTransactionResult $QueryTransactionResult
+     * @return $this
      */
     public function setQueryTransactionResult(QueryTransactionResult $QueryTransactionResult)
     {
@@ -281,7 +290,8 @@ class Response extends AbstractEntity
     }
 
     /**
-     * @param QueryTransactionResult $QueryTransactionResult
+     * @param QueryTransactionResult $HistoricTransactionResult
+     * @return $this
      */
     public function setHistoricTransactionResult(QueryTransactionResult $HistoricTransactionResult)
     {
@@ -316,5 +326,4 @@ class Response extends AbstractEntity
     {
         $this->extendedResponseMessage = $extendedResponseMessage;
     }
-
 }

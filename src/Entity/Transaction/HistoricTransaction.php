@@ -15,8 +15,8 @@ use RedeCard\Ecommerce\Entity\AbstractEntity;
  * @package RedeCard\Ecommerce\Entity\Transaction
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class HistoricTransaction extends AbstractEntity {
-
+class HistoricTransaction extends AbstractEntity
+{
     /**
      * Referência única fornecida pelo e-Commerce Redecard na Resposta
      * à transação original do gatewayReference.
@@ -45,6 +45,7 @@ class HistoricTransaction extends AbstractEntity {
 
     /**
      * @param string $authCode
+     * @return $this
      */
     public function setAuthCode($authCode)
     {
@@ -62,6 +63,7 @@ class HistoricTransaction extends AbstractEntity {
 
     /**
      * @param string $method
+     * @return $this
      */
     public function setMethod($method)
     {
@@ -79,6 +81,7 @@ class HistoricTransaction extends AbstractEntity {
 
     /**
      * @param int $reference
+     * @return $this
      */
     public function setReference($reference)
     {
@@ -93,5 +96,4 @@ class HistoricTransaction extends AbstractEntity {
     {
         return $this->reference;
     }
-
 }

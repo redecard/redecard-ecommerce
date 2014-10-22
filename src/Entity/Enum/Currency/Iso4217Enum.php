@@ -12,17 +12,16 @@ namespace RedeCard\Ecommerce\Entity\Enum\Currency;
  * @author Alexandre Xavier <alexandre.rodrigues.xv@gmail.com>
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class Iso4217Enum {
-
-    const ARGENTINE_PESO     = 'ARS';
+class Iso4217Enum
+{
+    const ARGENTINE_PESO = 'ARS';
     const BOLIVIAN_BOLIVIANO = 'BOB';
-    const BRAZILIAN_REAL     = 'BRL';
-    const CHILEAN_PESO       = 'CLP';
-    const COLOMBIAN_PESO     = 'COP';
-    const MEXICAN_PESO       = 'MXN';
+    const BRAZILIAN_REAL = 'BRL';
+    const CHILEAN_PESO = 'CLP';
+    const COLOMBIAN_PESO = 'COP';
+    const MEXICAN_PESO = 'MXN';
     const PARAGUAYAN_GUARANI = 'PYG';
-    const URUGUAYAN_PESO     = 'UYU';
-    const EURO               = 'EUR';
-    const US_DOLLAR          = 'USD';
-
+    const URUGUAYAN_PESO = 'UYU';
+    const EURO = 'EUR';
+    const US_DOLLAR = 'USD';
 }

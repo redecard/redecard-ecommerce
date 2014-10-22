@@ -10,8 +10,8 @@ use RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Cv2AvsResult;
  * @package RedeCard\Ecommerce\Entity\Transaction
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class CardTransactionResult {
-
+class CardTransactionResult
+{
     /**
      * O banco emissor do cartão, se conhecido.
      *
@@ -49,6 +49,7 @@ class CardTransactionResult {
 
     /**
      * @param Cv2AvsResult $Cv2Avs
+     * @return $this
      */
     public function setCv2Avs(Cv2AvsResult $Cv2Avs)
     {
@@ -66,6 +67,7 @@ class CardTransactionResult {
 
     /**
      * @param string $authCode
+     * @return $this
      */
     public function setAuthCode($authCode)
     {
@@ -83,6 +85,7 @@ class CardTransactionResult {
 
     /**
      * @param string $cardScheme
+     * @return $this
      */
     public function setCardScheme($cardScheme)
     {
@@ -100,6 +103,7 @@ class CardTransactionResult {
 
     /**
      * @param string $country
+     * @return $this
      */
     public function setCountry($country)
     {
@@ -117,6 +121,7 @@ class CardTransactionResult {
 
     /**
      * @param string $issuer
+     * @return $this
      */
     public function setIssuer($issuer)
     {
@@ -131,5 +136,4 @@ class CardTransactionResult {
     {
         return $this->issuer;
     }
-
 }

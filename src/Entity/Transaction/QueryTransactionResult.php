@@ -11,8 +11,8 @@ use RedeCard\Ecommerce\Entity\Transaction\CardTransaction\ThreeDSecure;
  * @package RedeCard\Ecommerce\Entity\Transaction
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class QueryTransactionResult {
-
+class QueryTransactionResult
+{
     /**
      * Elemento que contém detalhes do cartão utilizado
      *
@@ -138,6 +138,7 @@ class QueryTransactionResult {
 
     /**
      * @param CardTransaction\ThreeDSecure $ThreeDSecure
+     * @return $this
      */
     public function setThreeDSecure(ThreeDSecure $ThreeDSecure)
     {
@@ -155,6 +156,7 @@ class QueryTransactionResult {
 
     /**
      * @param string $acquirer
+     * @return $this
      */
     public function setAcquirer($acquirer)
     {
@@ -172,6 +174,7 @@ class QueryTransactionResult {
 
     /**
      * @param string $authCode
+     * @return $this
      */
     public function setAuthCode($authCode)
     {
@@ -189,6 +192,7 @@ class QueryTransactionResult {
 
     /**
      * @param string $environment
+     * @return $this
      */
     public function setEnvironment($environment)
     {
@@ -206,6 +210,7 @@ class QueryTransactionResult {
 
     /**
      * @param string $fulfillDate
+     * @return $this
      */
     public function setFulfillDate($fulfillDate)
     {
@@ -223,6 +228,7 @@ class QueryTransactionResult {
 
     /**
      * @param string $fulfillTimestamp
+     * @return $this
      */
     public function setFulfillTimestamp($fulfillTimestamp)
     {
@@ -240,6 +246,7 @@ class QueryTransactionResult {
 
     /**
      * @param string $gatewayReference
+     * @return $this
      */
     public function setGatewayReference($gatewayReference)
     {
@@ -257,6 +264,7 @@ class QueryTransactionResult {
 
     /**
      * @param string $merchantReference
+     * @return $this
      */
     public function setMerchantReference($merchantReference)
     {
@@ -274,6 +282,7 @@ class QueryTransactionResult {
 
     /**
      * @param string $reason
+     * @return $this
      */
     public function setReason($reason)
     {
@@ -291,6 +300,7 @@ class QueryTransactionResult {
 
     /**
      * @param string $sent
+     * @return $this
      */
     public function setSent($sent)
     {
@@ -308,6 +318,7 @@ class QueryTransactionResult {
 
     /**
      * @param string $status
+     * @return $this
      */
     public function setStatus($status)
     {
@@ -325,6 +336,7 @@ class QueryTransactionResult {
 
     /**
      * @param string $transactionDate
+     * @return $this
      */
     public function setTransactionDate($transactionDate)
     {
@@ -342,6 +354,7 @@ class QueryTransactionResult {
 
     /**
      * @param string $transactionTimestamp
+     * @return $this
      */
     public function setTransactionTimestamp($transactionTimestamp)
     {
@@ -356,5 +369,4 @@ class QueryTransactionResult {
     {
         return $this->transactionTimestamp;
     }
-
 }

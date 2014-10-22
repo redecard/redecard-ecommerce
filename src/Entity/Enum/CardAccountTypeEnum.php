@@ -10,9 +10,8 @@ namespace RedeCard\Ecommerce\Entity\Enum;
  * @package RedeCard\Ecommerce\Entity\Enum
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class CardAccountTypeEnum {
-
+class CardAccountTypeEnum
+{
     const CREDIT = 'credit';
-    const DEBIT  = 'debit';
-
+    const DEBIT = 'debit';
 }

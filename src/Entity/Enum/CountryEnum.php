@@ -11,8 +11,8 @@ use RedeCard\Ecommerce\Exception\Exception;
  * @author Daniel Costa <danielcosta@gmail.com>
  * @link http://unstats.un.org/unsd/methods/m49/m49alpha.htm
  */
-class CountryEnum {
-
+class CountryEnum
+{
     /**
      * @var array
      * @link http://unstats.un.org/unsd/methods/m49/m49alpha.htm
@@ -37,5 +37,4 @@ class CountryEnum {
 
         throw new Exception('Invalid ISO 3 country code');
     }
-
 }

@@ -10,9 +10,8 @@ namespace RedeCard\Ecommerce\Entity\Enum;
  * @package RedeCard\Ecommerce\Entity\Enum
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class CaptureMethodEnum {
-
-    const ECOMM     = 'ecomm';
+class CaptureMethodEnum
+{
+    const ECOMM = 'ecomm';
     const CONT_AUTH = 'cont_auth';
-
 }

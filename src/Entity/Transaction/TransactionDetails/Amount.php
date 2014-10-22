@@ -3,7 +3,6 @@
 namespace RedeCard\Ecommerce\Entity\Transaction\TransactionDetails;
 
 use RedeCard\Ecommerce\Entity\AbstractEntity;
-use RedeCard\Ecommerce\Entity\Enum\Currency\Iso4217Enum;
 
 /**
  * Class Card
@@ -11,8 +10,8 @@ use RedeCard\Ecommerce\Entity\Enum\Currency\Iso4217Enum;
  * @package RedeCard\Ecommerce\Entity\Transaction\CardTransaction
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class Amount extends AbstractEntity {
-
+class Amount extends AbstractEntity
+{
     /**
      * Valor da transação
      *
@@ -29,6 +28,7 @@ class Amount extends AbstractEntity {
 
     /**
      * @param float $amount
+     * @return $this
      */
     public function setAmount($amount)
     {
@@ -46,6 +46,7 @@ class Amount extends AbstractEntity {
 
     /**
      * @param string $currency
+     * @return $this
      */
     public function setCurrency($currency)
     {
@@ -60,5 +61,4 @@ class Amount extends AbstractEntity {
     {
         return $this->currency;
     }
-
 }

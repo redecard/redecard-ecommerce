@@ -13,8 +13,8 @@ use RedeCard\Ecommerce\Exception\Exception;
  * @package RedeCard\Ecommerce\Entity\Transaction\CardTransaction
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class Card extends AbstractEntity {
-
+class Card extends AbstractEntity
+{
     /**
      * Número do cartão
      *
@@ -48,13 +48,18 @@ class Card extends AbstractEntity {
      */
     protected $cv2Avs;
 
+    /**
+     * @return Card
+     */
     public function __construct()
     {
         return $this;
     }
 
     /**
-     * @param string $cardAccountType
+     * @param $cardAccountType
+     * @throws Exception
+     * @return $this
      */
     public function setCardAccountType($cardAccountType)
     {
@@ -80,6 +85,7 @@ class Card extends AbstractEntity {
 
     /**
      * @param mixed $expiryDate
+     * @return $this
      */
     public function setExpiryDate($expiryDate)
     {
@@ -97,6 +103,7 @@ class Card extends AbstractEntity {
 
     /**
      * @param string $pan
+     * @return $this
      */
     public function setPan($pan)
     {
@@ -114,6 +121,7 @@ class Card extends AbstractEntity {
 
     /**
      * @param Cv2Avs $cv2Avs
+     * @return $this
      */
     public function setCv2Avs(Cv2Avs $cv2Avs)
     {
@@ -128,5 +136,4 @@ class Card extends AbstractEntity {
     {
         return $this->cv2Avs;
     }
-
 }

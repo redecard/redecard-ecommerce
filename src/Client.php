@@ -11,8 +11,8 @@ use Httpful\Response;
  * @package RedeCard\Ecommerce
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class Client {
-
+class Client
+{
     /**
      * @var string
      */
@@ -48,6 +48,7 @@ class Client {
 
     /**
      * @param string $endpoint
+     * @return $this
      */
     public function setEndpoint($endpoint)
     {
@@ -65,6 +66,7 @@ class Client {
 
     /**
      * @param string $message
+     * @return $this
      */
     public function setMessage($message)
     {
@@ -79,5 +81,4 @@ class Client {
     {
         return $this->message;
     }
-
 }

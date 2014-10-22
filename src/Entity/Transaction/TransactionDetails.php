@@ -11,8 +11,8 @@ use RedeCard\Ecommerce\Entity\Transaction\TransactionDetails\Installments;
  * @package RedeCard\Ecommerce\Entity\Transaction
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class TransactionDetails extends AbstractEntity {
-
+class TransactionDetails extends AbstractEntity
+{
     /**
      * Número de referência único para cada transação
      *
@@ -64,7 +64,8 @@ class TransactionDetails extends AbstractEntity {
     protected $multiPv;
 
     /**
-     * @param Amount $amount
+     * @param Amount $Amount
+     * @return $this
      */
     public function setAmount(Amount $Amount)
     {
@@ -96,7 +97,8 @@ class TransactionDetails extends AbstractEntity {
     }
 
     /**
-     * @param string $capturemethod
+     * @param string $captureMethod
+     * @return $this
      */
     public function setCaptureMethod($captureMethod)
     {
@@ -114,7 +116,8 @@ class TransactionDetails extends AbstractEntity {
     }
 
     /**
-     * @param string $merchantreference
+     * @param string $merchantReference
+     * @return $this
      */
     public function setMerchantReference($merchantReference)
     {
@@ -150,5 +153,4 @@ class TransactionDetails extends AbstractEntity {
     {
         $this->multiPv = $multiPv;
     }
-
 }

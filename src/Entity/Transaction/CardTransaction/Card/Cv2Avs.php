@@ -205,7 +205,7 @@ class Cv2Avs
     }
 
     /**
-     * @param string $postcode
+     * @param string $postCode
      * @return $this
      */
     public function setPostCode($postCode)

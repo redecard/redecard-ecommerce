@@ -12,8 +12,8 @@ use RedeCard\Ecommerce\Entity\Transaction\HistoricTransaction;
  * @package RedeCard\Ecommerce\Entity
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class Transaction {
-
+class Transaction
+{
     /**
      * @var Transaction\CardTransaction
      */
@@ -31,6 +31,7 @@ class Transaction {
 
     /**
      * @param CardTransaction $CardTransaction
+     * @return $this
      */
     public function setCardTransaction(CardTransaction $CardTransaction)
     {
@@ -48,6 +49,7 @@ class Transaction {
 
     /**
      * @param HistoricTransaction $HistoricTransaction
+     * @return $this
      */
     public function setHistoricTransaction(HistoricTransaction $HistoricTransaction)
     {
@@ -65,6 +67,7 @@ class Transaction {
 
     /**
      * @param TransactionDetails $TransactionDetails
+     * @return $this
      */
     public function setTransactionDetails(TransactionDetails $TransactionDetails)
     {
@@ -79,5 +82,4 @@ class Transaction {
     {
         return $this->TransactionDetails;
     }
-
 }

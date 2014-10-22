@@ -9,8 +9,8 @@ use RedeCard\Ecommerce\Entity\Transaction\Details\AdditionalInfo\CustomerInfo;
  * @package RedeCard\Ecommerce\Entity\Transaction\Details
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class AdditionalInfo {
-
+class AdditionalInfo
+{
     /**
      * @var string
      */
@@ -28,6 +28,7 @@ class AdditionalInfo {
 
     /**
      * @param CustomerInfo $CustomerInfo
+     * @return $this
      */
     public function setCustomerInfo(CustomerInfo $CustomerInfo)
     {
@@ -44,7 +45,8 @@ class AdditionalInfo {
     }
 
     /**
-     * @param string $addendumdata
+     * @param string $addendumData
+     * @return $this
      */
     public function setAddendumData($addendumData)
     {
@@ -61,7 +63,8 @@ class AdditionalInfo {
     }
 
     /**
-     * @param string $risk_bypass
+     * @param string $riskBypass
+     * @return $this
      */
     public function setRiskBypass($riskBypass)
     {
@@ -76,5 +79,4 @@ class AdditionalInfo {
     {
         return $this->riskBypass;
     }
-
 }

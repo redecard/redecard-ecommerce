@@ -8,8 +8,8 @@ namespace RedeCard\Ecommerce\Entity\Transaction\CardTransaction;
  * @package RedeCard\Ecommerce\Entity\Transaction\CardTransaction
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class ThreeDSecure {
-
+class ThreeDSecure
+{
     /**
      * ECI (Indicador de Comércio Eletrônico)
      *
@@ -33,6 +33,7 @@ class ThreeDSecure {
 
     /**
      * @param string $eci
+     * @return $this
      */
     public function setEci($eci)
     {
@@ -50,6 +51,7 @@ class ThreeDSecure {
 
     /**
      * @param string $securityCode
+     * @return $this
      */
     public function setSecurityCode($securityCode)
     {
@@ -67,6 +69,7 @@ class ThreeDSecure {
 
     /**
      * @param string $transactionID
+     * @return $this
      */
     public function setTransactionID($transactionID)
     {
@@ -81,5 +84,4 @@ class ThreeDSecure {
     {
         return $this->transactionID;
     }
-
 }

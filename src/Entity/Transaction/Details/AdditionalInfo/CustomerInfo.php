@@ -7,8 +7,8 @@ namespace RedeCard\Ecommerce\Entity\Transaction\Details\AdditionalInfo;
  * @package RedeCard\Ecommerce\Entity\Transaction\Details\AdditionalInfo
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class CustomerInfo {
-
+class CustomerInfo
+{
     /**
      * Endereço de IP
      *
@@ -18,6 +18,7 @@ class CustomerInfo {
 
     /**
      * @param string $customerIpAddress
+     * @return $this
      */
     public function setCustomerIpAddress($customerIpAddress)
     {
@@ -32,5 +33,4 @@ class CustomerInfo {
     {
         return $this->customerIpAddress;
     }
-
 }

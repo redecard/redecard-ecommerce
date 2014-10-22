@@ -2,16 +2,14 @@
 
 namespace RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs;
 
-use RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs\ExtendedPolicyAttributes;
-
 /**
  * Class ExtendedPolicy
  *
  * @package RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class ExtendedPolicy {
-
+class ExtendedPolicy
+{
     /**
      * Cada um desses elementos possui cinco atributos
      *
@@ -42,6 +40,7 @@ class ExtendedPolicy {
 
     /**
      * @param ExtendedPolicyAttributes $addressPolicy
+     * @return $this
      */
     public function setAddressPolicy(ExtendedPolicyAttributes $addressPolicy)
     {
@@ -59,6 +58,7 @@ class ExtendedPolicy {
 
     /**
      * @param ExtendedPolicyAttributes $cpfPolicy
+     * @return $this
      */
     public function setCpfPolicy(ExtendedPolicyAttributes $cpfPolicy)
     {
@@ -76,6 +76,7 @@ class ExtendedPolicy {
 
     /**
      * @param ExtendedPolicyAttributes $cv2Policy
+     * @return $this
      */
     public function setCv2Policy(ExtendedPolicyAttributes $cv2Policy)
     {
@@ -93,6 +94,7 @@ class ExtendedPolicy {
 
     /**
      * @param ExtendedPolicyAttributes $postCodePolicy
+     * @return $this
      */
     public function setPostCodePolicy(ExtendedPolicyAttributes $postCodePolicy)
     {
@@ -107,5 +109,4 @@ class ExtendedPolicy {
     {
         return $this->postCodePolicy;
     }
-
 }

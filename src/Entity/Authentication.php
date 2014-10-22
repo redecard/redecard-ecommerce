@@ -4,7 +4,7 @@ namespace RedeCard\Ecommerce\Entity;
 
 use RedeCard\Ecommerce\Entity\Authentication\AcquirerCode;
 use RedeCard\Ecommerce\Entity\Enum\AuthenticationType;
-use RedeCard\Ecommerce\Exception\Exception;
+use RedeCard\Ecommerce\Exception\InvalidArgumentException;
 
 /**
  * Class Authentication
@@ -47,7 +47,7 @@ class Authentication extends AbstractEntity
      * @param string $password Password
      * @param int $type Authentication Type
      * @return Authentication
-     * @throws \Exception
+     * @throws InvalidArgumentException
      */
     public function __construct($client, $password, $type = AuthenticationType::ACQUIRER)
     {
@@ -60,7 +60,7 @@ class Authentication extends AbstractEntity
                 $this->setClient($client);
                 break;
             default:
-                throw new Exception('Invalid authentication type');
+                throw new InvalidArgumentException('Invalid authentication type');
         }
         $this->setPassword($password);
         return $this;

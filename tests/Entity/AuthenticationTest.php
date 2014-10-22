@@ -31,9 +31,9 @@ class AuthenticationTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \Exception
+     * @expectedException \RedeCard\Ecommerce\Exception\InvalidArgumentException
      */
-    public function testConstructorWithInvalidTypeThrowsException()
+    public function testConstructorWithInvalidTypeShouldThrowException()
     {
         new Authentication(123456789, 'p4ssw0rd', 0);
     }

@@ -10,8 +10,8 @@ use RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs\ExtendedPo
  * @package RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class Cv2Avs {
-
+class Cv2Avs
+{
     /**
      * O endereço da fatura (exceto o CEP) do cliente.
      *
@@ -98,6 +98,7 @@ class Cv2Avs {
 
     /**
      * @param ExtendedPolicy $ExtendedPolicy
+     * @return $this
      */
     public function setExtendedPolicy(ExtendedPolicy $ExtendedPolicy)
     {
@@ -115,6 +116,7 @@ class Cv2Avs {
 
     /**
      * @param string $city
+     * @return $this
      */
     public function setCity($city)
     {
@@ -132,6 +134,7 @@ class Cv2Avs {
 
     /**
      * @param string $country
+     * @return $this
      */
     public function setCountry($country)
     {
@@ -149,6 +152,7 @@ class Cv2Avs {
 
     /**
      * @param string $cpf
+     * @return $this
      */
     public function setCpf($cpf)
     {
@@ -166,6 +170,7 @@ class Cv2Avs {
 
     /**
      * @param string $cv2
+     * @return $this
      */
     public function setCv2($cv2)
     {
@@ -183,6 +188,7 @@ class Cv2Avs {
 
     /**
      * @param int $policy
+     * @return $this
      */
     public function setPolicy($policy)
     {
@@ -200,6 +206,7 @@ class Cv2Avs {
 
     /**
      * @param string $postcode
+     * @return $this
      */
     public function setPostCode($postCode)
     {
@@ -217,6 +224,7 @@ class Cv2Avs {
 
     /**
      * @param string $stateProvince
+     * @return $this
      */
     public function setStateProvince($stateProvince)
     {
@@ -234,6 +242,7 @@ class Cv2Avs {
 
     /**
      * @param string $streetAddress1
+     * @return $this
      */
     public function setStreetAddress1($streetAddress1)
     {
@@ -251,6 +260,7 @@ class Cv2Avs {
 
     /**
      * @param string $streetAddress2
+     * @return $this
      */
     public function setStreetAddress2($streetAddress2)
     {
@@ -268,6 +278,7 @@ class Cv2Avs {
 
     /**
      * @param string $streetAddress3
+     * @return $this
      */
     public function setStreetAddress3($streetAddress3)
     {
@@ -285,6 +296,7 @@ class Cv2Avs {
 
     /**
      * @param string $streetAddress4
+     * @return $this
      */
     public function setStreetAddress4($streetAddress4)
     {
@@ -299,5 +311,4 @@ class Cv2Avs {
     {
         return $this->streetAddress4;
     }
-
 }

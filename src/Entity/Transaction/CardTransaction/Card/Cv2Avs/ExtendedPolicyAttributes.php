@@ -2,14 +2,17 @@
 
 namespace RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs;
 
+use RedeCard\Ecommerce\Entity\Enum\ExtendedPolicyAttributeEnum;
+use RedeCard\Ecommerce\Exception\InvalidArgumentException;
+
 /**
  * Class ExtendedPolicyAttributes
  *
  * @package RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class ExtendedPolicyAttributes {
-
+class ExtendedPolicyAttributes
+{
     /**
      * @var string reject/accept
      * @see RedeCard\Ecommerce\Entity\Enum\ExtendedPolicyAttributeEnum
@@ -42,10 +45,17 @@ class ExtendedPolicyAttributes {
 
     /**
      * @param string $matched
+     * @return $this
+     * @throws InvalidArgumentException
      */
     public function setMatched($matched)
     {
+        if (!$this->isValid($matched)) {
+            throw new InvalidArgumentException('Invalid argument passed, "accept" or "reject" expected');
+        }
+
         $this->matched = $matched;
+
         return $this;
     }
 
@@ -59,10 +69,17 @@ class ExtendedPolicyAttributes {
 
     /**
      * @param string $notChecked
+     * @return $this
+     * @throws InvalidArgumentException
      */
     public function setNotChecked($notChecked)
     {
+        if (!$this->isValid($notChecked)) {
+            throw new InvalidArgumentException('Invalid argument passed, "accept" or "reject" expected');
+        }
+
         $this->notChecked = $notChecked;
+
         return $this;
     }
 
@@ -76,10 +93,16 @@ class ExtendedPolicyAttributes {
 
     /**
      * @param string $notMatched
+     * @return $this
+     * @throws InvalidArgumentException
      */
     public function setNotMatched($notMatched)
     {
+        if (!$this->isValid($notMatched)) {
+            throw new InvalidArgumentException('Invalid argument passed, "accept" or "reject" expected');
+        }
         $this->notMatched = $notMatched;
+
         return $this;
     }
 
@@ -93,10 +116,17 @@ class ExtendedPolicyAttributes {
 
     /**
      * @param string $notProvided
+     * @return $this
+     * @throws InvalidArgumentException
      */
     public function setNotProvided($notProvided)
     {
+        if (!$this->isValid($notProvided)) {
+            throw new InvalidArgumentException('Invalid argument passed, "accept" or "reject" expected');
+        }
+
         $this->notProvided = $notProvided;
+
         return $this;
     }
 
@@ -110,10 +140,16 @@ class ExtendedPolicyAttributes {
 
     /**
      * @param string $partialMatch
+     * @return $this
+     * @throws InvalidArgumentException
      */
     public function setPartialMatch($partialMatch)
     {
+        if (!$this->isValid($partialMatch)) {
+            throw new InvalidArgumentException('Invalid argument passed, "accept" or "reject" expected');
+        }
         $this->partialMatch = $partialMatch;
+
         return $this;
     }
 
@@ -125,4 +161,12 @@ class ExtendedPolicyAttributes {
         return $this->partialMatch;
     }
 
+    /**
+     * @param $value
+     * @return bool
+     */
+    protected function isValid($value)
+    {
+        return ($value == ExtendedPolicyAttributeEnum::ACCEPT || $value == ExtendedPolicyAttributeEnum::REJECT);
+    }
 }

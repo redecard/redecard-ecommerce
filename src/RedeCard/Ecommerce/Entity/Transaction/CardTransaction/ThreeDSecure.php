@@ -8,7 +8,8 @@ namespace RedeCard\Ecommerce\Entity\Transaction\CardTransaction;
  * @package RedeCard\Ecommerce\Entity\Transaction\CardTransaction
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class ThreeDSecure {
+class ThreeDSecure
+{
 
     /**
      * ECI (Indicador de Comércio Eletrônico)
@@ -81,5 +82,4 @@ class ThreeDSecure {
     {
         return $this->transactionID;
     }
-
 }

@@ -11,7 +11,8 @@ use RedeCard\Ecommerce\Exception\RedeCardEcommerceException;
  * @author Daniel Costa <danielcosta@gmail.com>
  * @link http://unstats.un.org/unsd/methods/m49/m49alpha.htm
  */
-class CountryEnum {
+class CountryEnum
+{
 
     /**
      * @var array
@@ -37,5 +38,4 @@ class CountryEnum {
 
         throw new RedeCardEcommerceException('Invalid ISO 3 country code');
     }
-
 }

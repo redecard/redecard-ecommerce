@@ -316,5 +316,4 @@ class Response extends AbstractEntity
     {
         $this->extendedResponseMessage = $extendedResponseMessage;
     }
-
 }

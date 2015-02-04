@@ -13,7 +13,8 @@ use RedeCard\Ecommerce\Exception\RedeCardEcommerceException;
  * @package RedeCard\Ecommerce\Entity\Transaction
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class CardTransaction extends AbstractEntity {
+class CardTransaction extends AbstractEntity
+{
 
     /**
      * @var CardTransaction\Card
@@ -85,7 +86,9 @@ class CardTransaction extends AbstractEntity {
                 return $this;
                 break;
             default:
-                throw new RedeCardEcommerceException('Invalid card transaction Method. Only "auth", "cancel", "fulfill" or "pre" allowed.');
+                throw new RedeCardEcommerceException(
+                    'Invalid card transaction Method. Only "auth", "cancel", "fulfill" or "pre" allowed.'
+                );
         }
     }
 
@@ -96,5 +99,4 @@ class CardTransaction extends AbstractEntity {
     {
         return $this->method;
     }
-
 }

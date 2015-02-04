@@ -14,12 +14,12 @@ use RedeCard\Ecommerce\Serializer\Builder;
  * @package RedeCard\Ecommerce
  * @author Daniel Costa <daniel.costa@mobly.com.br>
  */
-class RequestTest extends PHPUnit_Framework_TestCase {
+class RequestTest extends PHPUnit_Framework_TestCase
+{
     
     public function testRequestWithSampleData()
     {
         $result = Builder::create()->serialize(Samples::getSampleRequest(), 'xml');
         $this->assertXmlStringEqualsXmlString(Samples::getSampleRequestResultString(), $result);
     }
-
 }

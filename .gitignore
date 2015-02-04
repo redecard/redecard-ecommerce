@@ -1,4 +1,15 @@
-.idea/
-atlassian-ide-plugin.xml
-/composer.lock
+# Composer
 /vendor
+
+# PHPStorm
+/.idea/workspace.xml
+/.idea/tasks.xml
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Generated build files
+/build/
+
+# OS X
+.DS_Store

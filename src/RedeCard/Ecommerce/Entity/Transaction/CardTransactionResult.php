@@ -10,7 +10,8 @@ use RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Cv2AvsResult;
  * @package RedeCard\Ecommerce\Entity\Transaction
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class CardTransactionResult {
+class CardTransactionResult
+{
 
     /**
      * O banco emissor do cartão, se conhecido.
@@ -131,5 +132,4 @@ class CardTransactionResult {
     {
         return $this->issuer;
     }
-
 }

@@ -10,7 +10,8 @@ use RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs\ExtendedPo
  * @package RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class Cv2Avs {
+class Cv2Avs
+{
 
     /**
      * O endereço da fatura (exceto o CEP) do cliente.
@@ -299,5 +300,4 @@ class Cv2Avs {
     {
         return $this->streetAddress4;
     }
-
 }

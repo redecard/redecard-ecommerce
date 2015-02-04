@@ -11,7 +11,8 @@ use RedeCard\Ecommerce\Entity\Transaction\TransactionDetails\Installments;
  * @package RedeCard\Ecommerce\Entity\Transaction
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class TransactionDetails extends AbstractEntity {
+class TransactionDetails extends AbstractEntity
+{
 
     /**
      * Número de referência único para cada transação
@@ -150,5 +151,4 @@ class TransactionDetails extends AbstractEntity {
     {
         $this->multiPv = $multiPv;
     }
-
 }

@@ -10,7 +10,8 @@ namespace RedeCard\Ecommerce\Entity\Enum;
  * @package RedeCard\Ecommerce\Entity\Enum
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class CardSchemeEnum {
+class CardSchemeEnum
+{
 
     const DEBITO_MASTERCARD = 'Débito MasterCard';
     const DINERS_CLUB       = 'Diners Club';
@@ -20,5 +21,4 @@ class CardSchemeEnum {
     const VISA              = 'VISA';
     const VISA_DEBITO       = 'VISA Débito';
     const VISA_ELECTRON     = 'VISA Electron';
-
 }

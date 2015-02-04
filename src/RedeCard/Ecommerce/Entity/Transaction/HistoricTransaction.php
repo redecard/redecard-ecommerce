@@ -15,7 +15,8 @@ use RedeCard\Ecommerce\Entity\AbstractEntity;
  * @package RedeCard\Ecommerce\Entity\Transaction
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class HistoricTransaction extends AbstractEntity {
+class HistoricTransaction extends AbstractEntity
+{
 
     /**
      * Referência única fornecida pelo e-Commerce Redecard na Resposta
@@ -93,5 +94,4 @@ class HistoricTransaction extends AbstractEntity {
     {
         return $this->reference;
     }
-
 }

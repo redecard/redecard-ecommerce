@@ -8,7 +8,8 @@ namespace RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs;
  * @package RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class ExtendedPolicyAttributes {
+class ExtendedPolicyAttributes
+{
 
     /**
      * @var string reject/accept
@@ -124,5 +125,4 @@ class ExtendedPolicyAttributes {
     {
         return $this->partialMatch;
     }
-
 }

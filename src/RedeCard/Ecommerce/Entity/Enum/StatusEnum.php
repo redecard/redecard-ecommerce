@@ -12,7 +12,8 @@ use RedeCard\Ecommerce\Exception\RedeCardEcommerceException;
  * @package RedeCard\Ecommerce\Entity\Enum
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class StatusEnum {
+class StatusEnum
+{
 
     protected $codes = array(
         1 => 'ACCEPTED'
@@ -49,5 +50,4 @@ class StatusEnum {
         }
         throw new RedeCardEcommerceException('Invalid status code');
     }
-
 }

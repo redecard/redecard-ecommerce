@@ -12,7 +12,8 @@ use RedeCard\Ecommerce\Exception\RedeCardEcommerceException;
  * @package RedeCard\Ecommerce\Entity
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class Authentication extends AbstractEntity {
+class Authentication extends AbstractEntity
+{
 
     /**
      * Permite a um estabelecimento usar o número de identificação atribuído pelo adquirente.
@@ -114,5 +115,4 @@ class Authentication extends AbstractEntity {
     {
         return $this->client;
     }
-
 }

@@ -10,7 +10,8 @@ use RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs\ExtendedPo
  * @package RedeCard\Ecommerce\Entity\Transaction\CardTransaction\Card\Cv2Avs
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class ExtendedPolicy {
+class ExtendedPolicy
+{
 
     /**
      * Cada um desses elementos possui cinco atributos
@@ -107,5 +108,4 @@ class ExtendedPolicy {
     {
         return $this->postCodePolicy;
     }
-
 }

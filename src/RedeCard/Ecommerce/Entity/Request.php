@@ -11,7 +11,8 @@ use RedeCard\Ecommerce\Entity\Transaction;
  * @package RedeCard\Ecommerce\Entity
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class Request extends AbstractEntity {
+class Request extends AbstractEntity
+{
 
     /**
      * @var int
@@ -87,5 +88,4 @@ class Request extends AbstractEntity {
     {
         return $this->version;
     }
-
 }

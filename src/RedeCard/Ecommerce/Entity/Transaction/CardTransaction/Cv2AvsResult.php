@@ -8,7 +8,8 @@ namespace RedeCard\Ecommerce\Entity\Transaction\CardTransaction;
  * @package RedeCard\Ecommerce\Entity\Transaction\CardTransaction
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class Cv2AvsResult {
+class Cv2AvsResult
+{
 
     /**
      * O resultado geral da transação.
@@ -88,21 +89,24 @@ class Cv2AvsResult {
     protected $cpfResultNumeric;
 
     /**
-     * A política em relação à qual a transação foi verificada. Possuem o mesmo formato que as Solicitações - consulte a seção 2.3.1
+     * A política em relação à qual a transação foi verificada.
+     * Possuem o mesmo formato que as Solicitações - consulte a seção 2.3.1
      *
      * @var string
      */
     protected $addressPolicy;
 
     /**
-     * A política em relação à qual a transação foi verificada. Possuem o mesmo formato que as Solicitações - consulte a seção 2.3.1
+     * A política em relação à qual a transação foi verificada.
+     * Possuem o mesmo formato que as Solicitações - consulte a seção 2.3.1
      *
      * @var string
      */
     protected $cv2Policy;
 
     /**
-     * A política em relação à qual a transação foi verificada. Possuem o mesmo formato que as Solicitações - consulte a seção 2.3.1
+     * A política em relação à qual a transação foi verificada.
+     * Possuem o mesmo formato que as Solicitações - consulte a seção 2.3.1
      *
      * @var string
      */
@@ -345,5 +349,4 @@ class Cv2AvsResult {
     {
         return $this->postCodeResultNumeric;
     }
-
 }

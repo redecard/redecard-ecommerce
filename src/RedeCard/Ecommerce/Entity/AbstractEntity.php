@@ -10,7 +10,8 @@ namespace RedeCard\Ecommerce\Entity;
  * @author Thiago Risso
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class AbstractEntity {
+class AbstractEntity
+{
 
     /**
      * @return string
@@ -38,7 +39,8 @@ class AbstractEntity {
      * @param boolean $keepNullProperties Keep null object properties when building the request parameters
      * @return array
      */
-    protected function objectToArray($obj, $keepNullProperties = true) {
+    protected function objectToArray($obj, $keepNullProperties = true)
+    {
         $arrObj = is_object($obj) ? get_object_vars($obj) : $obj;
         $arr = array();
         foreach ($arrObj as $key => $val) {
@@ -50,5 +52,4 @@ class AbstractEntity {
         }
         return $arr;
     }
-
 }

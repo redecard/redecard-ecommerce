@@ -10,7 +10,8 @@ use JMS\Serializer\SerializerBuilder;
  * @package RedeCard\Ecommerce\Serializer
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class Builder {
+class Builder
+{
 
     /**
      * @return \JMS\Serializer\Serializer
@@ -33,5 +34,4 @@ class Builder {
     {
         return str_replace('<![CDATA[', '', str_replace(']]>', '', $xml));
     }
-
 }

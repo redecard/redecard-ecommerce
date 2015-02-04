@@ -12,7 +12,8 @@ namespace RedeCard\Ecommerce\Entity\Enum\Currency;
  * @author Alexandre Xavier <alexandre.rodrigues.xv@gmail.com>
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class Iso4217Enum {
+class Iso4217Enum
+{
 
     const ARGENTINE_PESO     = 'ARS';
     const BOLIVIAN_BOLIVIANO = 'BOB';
@@ -24,5 +25,4 @@ class Iso4217Enum {
     const URUGUAYAN_PESO     = 'UYU';
     const EURO               = 'EUR';
     const US_DOLLAR          = 'USD';
-
 }

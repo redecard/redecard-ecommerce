@@ -13,7 +13,8 @@ use RedeCard\Ecommerce\Exception\RedeCardEcommerceException;
  * @package RedeCard\Ecommerce\Entity\Transaction\CardTransaction
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class Card extends AbstractEntity {
+class Card extends AbstractEntity
+{
 
     /**
      * Número do cartão
@@ -128,5 +129,4 @@ class Card extends AbstractEntity {
     {
         return $this->cv2Avs;
     }
-
 }

@@ -13,7 +13,8 @@ use RedeCard\Ecommerce\Entity\AbstractEntity;
  * @package RedeCard\Ecommerce\Entity\Authentication
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class AcquirerCode extends AbstractEntity {
+class AcquirerCode extends AbstractEntity
+{
 
     /**
      * Número de identificação do estabelecimento atribuído pelo adquirente.
@@ -47,5 +48,4 @@ class AcquirerCode extends AbstractEntity {
     {
         return $this->rdcd_pv;
     }
-
 }

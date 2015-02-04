@@ -11,7 +11,8 @@ use RedeCard\Ecommerce\Entity\Transaction\CardTransaction\ThreeDSecure;
  * @package RedeCard\Ecommerce\Entity\Transaction
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class QueryTransactionResult {
+class QueryTransactionResult
+{
 
     /**
      * Elemento que contém detalhes do cartão utilizado
@@ -356,5 +357,4 @@ class QueryTransactionResult {
     {
         return $this->transactionTimestamp;
     }
-
 }

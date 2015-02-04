@@ -9,6 +9,7 @@ use \Exception;
  * @package RedeCard\Ecommerce\Exception
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class RedeCardEcommerceException extends Exception {
+class RedeCardEcommerceException extends Exception
+{
 
 }

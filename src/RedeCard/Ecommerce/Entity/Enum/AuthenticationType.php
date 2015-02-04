@@ -7,7 +7,8 @@ namespace RedeCard\Ecommerce\Entity\Enum;
  * @package RedeCard\Ecommerce\Entity\Enum
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class AuthenticationType {
+class AuthenticationType
+{
 
     /**
      * Este método usa uma instância de Authentication\AcquirerCode como parâmetro de autenticação
@@ -18,5 +19,4 @@ class AuthenticationType {
      * Este método usa apenas um Client id como parâmetro de autenticação
      */
     const CLIENT = 2;
-
 }

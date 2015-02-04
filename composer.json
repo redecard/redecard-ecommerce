@@ -4,6 +4,7 @@
     "description": "PHP library that provides a simple way to communicate with RedeCard Ecommerce payment gateway",
     "keywords": ["rede", "redecard", "ecommerce", "payment", "gateway", "credit card", "visa", "mastercard"],
     "homepage": "http://www.userede.com.br/pt-BR/produtosservicos/Paginas/ecommerce-manuais.aspx",
+    "license": "MIT",
     "authors": [
         {
             "name": "Daniel Costa",
@@ -30,9 +31,11 @@
         "nategood/httpful": "0.2.*"
     },
     "require-dev": {
-        "phpunit/phpunit": "4.2.*@dev"
+        "phpunit/phpunit": "~4.0",
+        "squizlabs/php_codesniffer": "~2.0",
+        "phpmd/phpmd": "~2.0"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-0": {
             "RedeCard": "src/"

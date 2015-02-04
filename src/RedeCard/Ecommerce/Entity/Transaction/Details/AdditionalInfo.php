@@ -9,7 +9,8 @@ use RedeCard\Ecommerce\Entity\Transaction\Details\AdditionalInfo\CustomerInfo;
  * @package RedeCard\Ecommerce\Entity\Transaction\Details
  * @author Daniel Costa <danielcosta@gmail.com>
  */
-class AdditionalInfo {
+class AdditionalInfo
+{
 
     /**
      * @var string
@@ -76,5 +77,4 @@ class AdditionalInfo {
     {
         return $this->riskBypass;
     }
-
 }

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysis>
+  <link href="https://insight.sensiolabs.com/api/projects/649aeff2-6329-4b59-aef6-89f58d2e565d/analyses/8" rel="self" type="application/vnd.com.sensiolabs.insight+xml"/>
+  <link href="https://insight.sensiolabs.com/api/projects/649aeff2-6329-4b59-aef6-89f58d2e565d/analyses/8/status" rel="status" type="application/vnd.com.sensiolabs.insight+xml"/>
+  <link href="https://insight.sensiolabs.com/api/projects/649aeff2-6329-4b59-aef6-89f58d2e565d" rel="project" type="application/vnd.com.sensiolabs.insight+xml"/>
+  <link href="https://insight.sensiolabs.com/projects/649aeff2-6329-4b59-aef6-89f58d2e565d/analyses/8" rel="self" type="text/html"/>
+  <status><![CDATA[]]></status>
+  <violations>
+    <violation severity="critical" category="bugrisk">
+      <line>0</line>
+      <title>Dependencies not installable</title>
+      <message><![CDATA[SensioLabsInsight was not able to install your Composer dependencies. If you need to customize files or run commands to make it work, you can edit your SensioLabsInsight project configuration to override the default "pre_composer_script" and/or "post_composer_script" settings.]]></message>
+      <context/>
+      <link href="https://insight.sensiolabs.com/projects/649aeff2-6329-4b59-aef6-89f58d2e565d/analyses/8?status=existing#185128999" rel="self" type="text/html"/>
+    </violation>
+  </violations>
+  <grades>
+    <entry><![CDATA[none]]></entry>
+    <entry><![CDATA[bronze]]></entry>
+    <entry><![CDATA[silver]]></entry>
+    <entry><![CDATA[gold]]></entry>
+    <entry><![CDATA[platinum]]></entry>
+  </grades>
+  <failed>false</failed>
+  <grade><![CDATA[none]]></grade>
+  <next-grade><![CDATA[bronze]]></next-grade>
+  <begin-at><![CDATA[2014-10-22T05:09:27+0200]]></begin-at>
+  <end-at><![CDATA[2014-10-22T05:10:23+0200]]></end-at>
+  <duration>5</duration>
+  <number>8</number>
+  <altered>false</altered>
+  <remediation-cost>3</remediation-cost>
+  <nb-violations>1</nb-violations>
+  <reference><![CDATA[2021df161a430fbc0c3d0bdd3066eaab0af2000b]]></reference>
+  <configuration>
+    <ignored-branches>
+      <branch><![CDATA[gh-pages]]></branch>
+    </ignored-branches>
+    <pre-composer-script/>
+    <post-composer-script/>
+    <php-ini/>
+    <global-excluded-dirs>
+      <dir><![CDATA[vendor]]></dir>
+      <dir><![CDATA[vendors]]></dir>
+      <dir><![CDATA[test]]></dir>
+      <dir><![CDATA[tests]]></dir>
+      <dir><![CDATA[Tests]]></dir>
+      <dir><![CDATA[spec]]></dir>
+      <dir><![CDATA[features]]></dir>
+      <dir><![CDATA[Fixtures]]></dir>
+      <dir><![CDATA[DataFixtures]]></dir>
+      <dir><![CDATA[var]]></dir>
+    </global-excluded-dirs>
+    <excluded-patterns>
+      <pattern><![CDATA[app/check.php]]></pattern>
+      <pattern><![CDATA[app/SymfonyRequirements.php]]></pattern>
+      <pattern><![CDATA[web/config.php]]></pattern>
+      <pattern><![CDATA[web/app_*.php]]></pattern>
+    </excluded-patterns>
+    <patterns>
+      <file>
+        <pattern><![CDATA[*.php]]></pattern>
+        <pattern><![CDATA[*.twig]]></pattern>
+        <pattern><![CDATA[*.xml]]></pattern>
+        <pattern><![CDATA[*.yml]]></pattern>
+        <pattern><![CDATA[*.yaml]]></pattern>
+        <pattern><![CDATA[*.ini]]></pattern>
+        <pattern><![CDATA[*.dist]]></pattern>
+        <pattern><![CDATA[*.sql]]></pattern>
+        <pattern><![CDATA[composer.*]]></pattern>
+        <pattern><![CDATA[.gitignore]]></pattern>
+        <pattern><![CDATA[license]]></pattern>
+        <pattern><![CDATA[LICENSE]]></pattern>
+        <pattern><![CDATA[readme]]></pattern>
+        <pattern><![CDATA[README]]></pattern>
+        <pattern><![CDATA[makefile]]></pattern>
+        <pattern><![CDATA[Makefile]]></pattern>
+        <pattern><![CDATA[.htaccess]]></pattern>
+      </file>
+      <php>
+        <pattern><![CDATA[*.php]]></pattern>
+      </php>
+      <twig>
+        <pattern><![CDATA[*.twig]]></pattern>
+      </twig>
+    </patterns>
+    <rules/>
+    <parameters>
+      <parameter name="project_type">1</parameter>
+    </parameters>
+  </configuration>
+  <previous-analyses-references>
+    <analysis-reference number="12">e1b2ef5e57f665f0b4b7382711b162c941535ee2</analysis-reference>
+    <analysis-reference number="11">e1b2ef5e57f665f0b4b7382711b162c941535ee2</analysis-reference>
+    <analysis-reference number="10">e1b2ef5e57f665f0b4b7382711b162c941535ee2</analysis-reference>
+    <analysis-reference number="9">82880969d4e661b7e8481639a7f899b905ac287f</analysis-reference>
+    <analysis-reference number="8">2021df161a430fbc0c3d0bdd3066eaab0af2000b</analysis-reference>
+    <analysis-reference number="7">f8f98347fd56b9daa4a2a2f8db63388e542a98b4</analysis-reference>
+    <analysis-reference number="6">5c1e56e8d9a9b8ed400cf32b340117bdff80cd41</analysis-reference>
+    <analysis-reference number="5">ef4dc90f5a8c1210b279d6b5b4f8d57f7e10d46c</analysis-reference>
+    <analysis-reference number="4">67c9388b17187b5dcbb4bd703d7a05ded67ca033</analysis-reference>
+    <analysis-reference number="3">49f50f21c25625b8a7c76ba136338baf43c22166</analysis-reference>
+    <analysis-reference number="2">fbb41e6569a7bca4e7edf3798944e9f0d4d69ccb</analysis-reference>
+    <analysis-reference number="1">e1b2ef5e57f665f0b4b7382711b162c941535ee2</analysis-reference>
+  </previous-analyses-references>
+  <nb-violations-new>0</nb-violations-new>
+  <nb-violations-existing>1</nb-violations-existing>
+  <nb-violations-fixed>0</nb-violations-fixed>
+  <nb-violations-ignored>0</nb-violations-ignored>
+</analysis>

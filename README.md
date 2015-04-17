@@ -1,5 +1,7 @@
 # RedeCard Ecommerce PHP Library [![Build Status](https://travis-ci.org/danielcosta/redecard-ecommerce.png?branch=master)](https://travis-ci.org/danielcosta/redecard-ecommerce) #
 
+[![Join the chat at https://gitter.im/danielcosta/redecard-ecommerce](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/danielcosta/redecard-ecommerce?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 
 ## Overview ##
 
